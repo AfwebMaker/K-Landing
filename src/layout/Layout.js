@@ -2,16 +2,18 @@ import React from 'react';
 //components 
 import Routers from '../routes/Routes';
 import Footer from './footer/Footer';
+import Header from './Header/Header';
 
 const Layout = () => {
 
     return (
         <div>
-            {/* navbar */}
-            <div>navbar</div>
+            {/* Header */}
+            <Header />
+            {/* Routers */}
             <Routers />
             {/* footer */}
-            <Footer/>
+            <Footer />
         </div>
     );
 };
