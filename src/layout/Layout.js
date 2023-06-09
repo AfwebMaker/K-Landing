@@ -7,14 +7,14 @@ import Header from './header/Header';
 const Layout = () => {
 
     return (
-        <div>
+        <>
             {/* Header */}
             <Header />
             {/* Routers */}
             <Routers />
             {/* footer */}
             <Footer />
-        </div>
+        </>
     );
 };
 
