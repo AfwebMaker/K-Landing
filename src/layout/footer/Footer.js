@@ -53,7 +53,7 @@ const footerContent = [
 const Footer = () => {
     return (
         <footer className="text-center bg-color-1 flex items-center flex-col">
-            <div className="container max-w-[1300px] px-[20px] md:px-[32px] xl:px-[72px]">
+            <div className="container max-w-[1300px] px-[20px] md:px-[32px]">
                 <div className="pt-10 pb-16 w-full flex lg:justify-start text-center justify-center mb-2 lg:m-0 transition-all duration-300">
                     <Link className="" to='#'>
                         <img src={KargoshaLogo} alt="KargoshaLogo" />

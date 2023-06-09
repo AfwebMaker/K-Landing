@@ -22,8 +22,13 @@ module.exports = {
 
         'color-font-1': '#353535',
         'color-font-2': '#636466',
-        'color-font-3': '#######',
+        'color-font-3': '#45B649',
+        'color-font-4': '#1B93D7',
         
+      },
+      padding: {
+        '2/3': '60%',
+        '1/3': '40%'
       },
     },
   },
