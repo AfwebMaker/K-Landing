@@ -22,3 +22,7 @@
     align-items: center;
     justify-content: center;
 }
+
+.maxlayout{
+  max-width: 1300px;
+}
