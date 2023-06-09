@@ -1,0 +1,95 @@
+
+@font-face {
+	font-family: Pelak;
+	font-style: normal;
+	font-weight: bold;
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-Bold.eot');
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff/Pelak-Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff2/Pelak-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/ttf/Pelak-Bold.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/otf/Pelak-Bold.otf') format('opentype');
+}
+@font-face {
+	font-family: Pelak;
+	font-style: normal;
+	font-weight: 100;
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-Thin.eot');
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-Thin.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff/Pelak-Thin.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff2/Pelak-Thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/ttf/Pelak-Thin.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/otf/Pelak-Thin.otf') format('opentype');
+}
+
+@font-face {
+	font-family: Pelak;
+	font-style: normal;
+	font-weight: 300;
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-light.eot');
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff/Pelak-light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff2/Pelak-light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/ttf/Pelak-light.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/otf/Pelak-light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: Pelak;
+	font-style: normal;
+	font-weight: normal;
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-Regular.eot');
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-Regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff/Pelak-Regular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff2/Pelak-Regular.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/ttf/Pelak-Regular.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/otf/Pelak-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: Pelak;
+	font-style: normal;
+	font-weight: 500;
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-Medium.eot');
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff/Pelak-Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff2/Pelak-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/ttf/Pelak-Medium.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/otf/Pelak-Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: Pelak;
+	font-style: normal;
+	font-weight: 600;
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-SemiBold.eot');
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-SemiBold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff/Pelak-SemiBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff2/Pelak-SemiBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/ttf/Pelak-SemiBold.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/otf/Pelak-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: Pelak;
+	font-style: normal;
+	font-weight: 800;
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-ExtraBold.eot');
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-ExtraBold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff/Pelak-ExtraBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff2/Pelak-ExtraBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/ttf/Pelak-ExtraBold.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/otf/Pelak-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: Pelak;
+	font-style: normal;
+	font-weight: 900;
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-Black.eot');
+	src: url('https://uploads.zibazi.tv/fonts/PelakFontFamily/eot/Pelak-Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff/Pelak-Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/woff2/Pelak-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/ttf/Pelak-Black.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/PelakFontFamily/otf/Pelak-Black.otf') format('opentype');
+}

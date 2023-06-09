@@ -1,0 +1,95 @@
+
+@font-face {
+	font-family: PelakFA;
+	font-style: normal;
+	font-weight: bold;
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-Bold.eot');
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff/PelakFA-Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff2/PelakFA-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/ttf/PelakFA-Bold.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/otf/PelakFA-Bold.otf') format('opentype');
+}
+@font-face {
+	font-family: PelakFA;
+	font-style: normal;
+	font-weight: 100;
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-Thin.eot');
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-Thin.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff/PelakFA-Thin.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff2/PelakFA-Thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/ttf/PelakFA-Thin.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/otf/PelakFA-Thin.otf') format('opentype');
+}
+
+@font-face {
+	font-family: PelakFA;
+	font-style: normal;
+	font-weight: 300;
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-light.eot');
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff/PelakFA-light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff2/PelakFA-light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/ttf/PelakFA-light.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/otf/PelakFA-light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: PelakFA;
+	font-style: normal;
+	font-weight: normal;
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-Regular.eot');
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-Regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff/PelakFA-Regular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff2/PelakFA-Regular.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/ttf/PelakFA-Regular.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/otf/PelakFA-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: PelakFA;
+	font-style: normal;
+	font-weight: 500;
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-Medium.eot');
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff/PelakFA-Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff2/PelakFA-Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/ttf/PelakFA-Medium.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/otf/PelakFA-Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: PelakFA;
+	font-style: normal;
+	font-weight: 600;
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-SemiBold.eot');
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-SemiBold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff/PelakFA-SemiBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff2/PelakFA-SemiBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/ttf/PelakFA-SemiBold.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/otf/PelakFA-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: PelakFA;
+	font-style: normal;
+	font-weight: 800;
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-ExtraBold.eot');
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-ExtraBold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff/PelakFA-ExtraBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff2/PelakFA-ExtraBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/ttf/PelakFA-ExtraBold.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/otf/PelakFA-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: PelakFA;
+	font-style: normal;
+	font-weight: 900;
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-Black.eot');
+	src: url('https://uploads.zibazi.tv/fonts/FarsiNumeral/eot/PelakFA-Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff/PelakFA-Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/woff2/PelakFA-Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/ttf/PelakFA-Black.ttf') format('truetype'),
+		 url('https://uploads.zibazi.tv/fonts/FarsiNumeral/otf/PelakFA-Black.otf') format('opentype');
+}
