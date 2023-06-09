@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import cardPoster from "../../../assets/images/home/weblog/Card Image.png"
 
 function BlogCard(props) {
-    const { id, title, description } = props
+    const { title, description } = props
 
     return (
         <div className='bg-color-1 h-72 overflow-hidden rounded-xl cursor-pointer max-w-[300px]'>
