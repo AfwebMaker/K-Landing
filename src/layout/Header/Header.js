@@ -12,7 +12,7 @@ function Header() {
         </div>
 
         <div className='fcc text-sm'>
-          <div className='ml-4'>
+          <div className='ml-4 flex'>
             <span>متخصص هستم</span>
             <img src={person} alt="ایکون شخص" />
           </div>
