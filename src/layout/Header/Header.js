@@ -11,7 +11,7 @@ function Header() {
   //detect scrollTop largest 100 or not
   useEffect(() => {
     const onScroll = window.addEventListener('scroll', (e) => {
-      setMenuIsActive(e.target.documentElement.scrollTop > 100);
+      setMenuIsActive(e.target.documentElement.scrollTop > 600);
     });
 
     return () => window.removeEventListener('scroll', onScroll);
