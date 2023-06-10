@@ -3,6 +3,7 @@ import React from 'react'
 import Weblog from '../components/Home/weblog/Weblog.js'
 import Hero from '../components/Home/hero/Hero.js'
 import CarouselBanner from '../components/Home/carouselBanner/CarouselBanner.js'
+import Questions from '../components/Home/questions/Questions.js'
 
 export const Home = () => {
 
@@ -11,6 +12,7 @@ export const Home = () => {
       <div className='h-[100px] w-full bg-black'></div>
       <Hero />
       <CarouselBanner />
+      <Questions />
       <Weblog />
     </div>
   )

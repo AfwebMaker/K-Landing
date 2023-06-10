@@ -24,6 +24,7 @@ module.exports = {
         'color-font-2': '#636466',
         'color-font-3': '#45B649',
         'color-font-4': '#1B93D7',
+        'color-font-5': '#FF513D',
         
       },
       padding: {
