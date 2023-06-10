@@ -2,7 +2,7 @@ import React from 'react';
 //components 
 import Routers from '../routes/Routes';
 import Footer from './footer/Footer';
-import Header from '../layout/header/Header';
+import Header from '../layout/header/Header.js';
 
 const Layout = () => {
 
