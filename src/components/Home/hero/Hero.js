@@ -12,7 +12,7 @@ import search from '../../../assets/images/header/Search.svg'
 
 function Hero() {
     return (
-        <div className='w-full fcc relative h-[604px]'>
+        <div className='w-full fcc relative h-[calc(100vh-100px)]'>
             <div className='maxLayout h-full w-full relative'>
                 <div className='flex items-start justify-end h-full'>
                     <div className='flex justify-start items-start flex-col text-3xl w-[35%] absolute right-12 top-36'>
@@ -32,9 +32,9 @@ function Hero() {
                                 <svg className='z-10' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7.74377 0C3.47153 0 0 3.47153 0 7.74377C0 12.016 3.47153 15.4875 7.74377 15.4875C9.43416 15.4875 10.9964 14.9431 12.2705 14.0214L18.2633 20L19.5445 18.7189L13.6228 12.7829C14.7865 11.427 15.4875 9.66726 15.4875 7.74377C15.4875 3.47153 12.016 0 7.74377 0ZM7.74377 0.911032C11.5231 0.911032 14.5765 3.96441 14.5765 7.74377C14.5765 11.5231 11.5231 14.5765 7.74377 14.5765C3.96441 14.5765 0.911032 11.5231 0.911032 7.74377C0.911032 3.96441 3.96441 0.911032 7.74377 0.911032Z" fill="#ffffff" />
                                 </svg>
-                                <div className='w-9 h-9 animate-ping z-0 absolute left-0 rounded-full fcc p-[10px] bg-color-font-3'></div>
                             </div>
-                            <input className='pr-4 font-thin text-base  w-full h-full bg-white focus:outline-0 boxShadowCustom rounded-full' type="text" />
+                            <input className='peer pr-4 font-thin text-base w-full h-full focus:outline-0 boxShadowCustom rounded-full' type="text" />
+                            <div className='peer-focus:animate-ping w-9 h-9 z-0 absolute left-1 rounded-full fcc p-[10px] bg-color-font-3'></div>
                         </div>
                     </div>
                     <img className='object-contain h-full left-0 top-0' src={banner} alt="بنر" />
