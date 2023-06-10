@@ -44,6 +44,7 @@
 .swiper{
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 span.swiper-pagination-bullet-active {
@@ -54,4 +55,10 @@ span.swiper-pagination-bullet-active {
 span.swiper-pagination-bullet {
   background-color: white;
   opacity: 1;
+}
+
+.backgroundAppInformation {
+  background-image: url('./assets/images/home/AppInformation/AppInformationImages.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }

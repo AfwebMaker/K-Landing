@@ -18,12 +18,14 @@ module.exports = {
       colors: {
         'color-1': '#EBEFED',
         'color-2': '#9D9FA2',
-        'color-3': '#######',
+        'color-3': '#45B649',
+        'color-4': '#######',
 
         'color-font-1': '#353535',
         'color-font-2': '#636466',
         'color-font-3': '#45B649',
         'color-font-4': '#1B93D7',
+        'color-font-5': '#FF513D',
         
       },
       padding: {
