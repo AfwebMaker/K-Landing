@@ -52,3 +52,9 @@ span.swiper-pagination-bullet {
   background-color: white;
   opacity: 1;
 }
+
+.backgroundAppInformation {
+  background-image: url('./assets/images/home/AppInformation/AppInformationImages.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}

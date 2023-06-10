@@ -18,7 +18,8 @@ module.exports = {
       colors: {
         'color-1': '#EBEFED',
         'color-2': '#9D9FA2',
-        'color-3': '#######',
+        'color-3': '#45B649',
+        'color-4': '#######',
 
         'color-font-1': '#353535',
         'color-font-2': '#636466',
