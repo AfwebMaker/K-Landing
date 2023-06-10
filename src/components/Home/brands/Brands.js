@@ -16,22 +16,22 @@ function Brands() {
         </span>
         <div className='flex items-center justify-around w-full '>
           <div>
-            <img src={AcademyMedium} alt='' />
+            <img src={AcademyMedium} alt='برند آکادمی' />
           </div>
           <div>
-            <img src={AutoSazeMedium} alt='' />
+            <img src={AutoSazeMedium} alt='برند اتوسازه' />
           </div>
           <div>
-            <img src={KargoshaMedium} alt='' />
+            <img src={KargoshaMedium} alt='برند اتو سازه' />
           </div>
           <div>
-            <img src={MekaMedium} alt='' />
+            <img src={MekaMedium} alt='برند مکا' />
           </div>
           <div>
-            <img src={MetriChandMedium} alt='' />
+            <img src={MetriChandMedium} alt='برند متری چند' />
           </div>
           <div>
-            <img src={SindbadMedium} alt='' />
+            <img src={SindbadMedium} alt='برند سیندباد' />
           </div>
         </div>
 
