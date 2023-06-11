@@ -8,7 +8,6 @@ import Drill_Icon from '../../../assets/images/home/hero/Drill_Icon.svg'
 import Jackhammer from '../../../assets/images/home/hero/Jackhammer.svg'
 import Screw_Icon from '../../../assets/images/home/hero/Screw_Icon.svg'
 import Helmet_Icon from '../../../assets/images/home/hero/Helmet_Icon.svg'
-import search from '../../../assets/images/header/Search.svg'
 
 function Hero() {
     return (

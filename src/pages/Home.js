@@ -9,6 +9,7 @@ import Brands from '../components/Home/brands/Brands.js'
 import OfferBanner from '../components/Home/offerBanner/OfferBanner.js'
 import ProductsCategorization from '../components/Home/productsCategorization/ProductsCategorization.js'
 
+import Calculator from '../components/Home/calculator/Calculator.js'
 
 export const Home = () => {
 
@@ -23,6 +24,7 @@ export const Home = () => {
       <OfferBanner />
       <Questions />
       <AppInformation />
+      <Calculator />
       <Weblog />
     </div>
   )
