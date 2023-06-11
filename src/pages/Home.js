@@ -6,6 +6,7 @@ import CarouselBanner from '../components/Home/carouselBanner/CarouselBanner.js'
 import Questions from '../components/Home/questions/Questions.js'
 import AppInformation from '../components/Home/AppInformation/AppInformation.js'
 import Brands from '../components/Home/brands/Brands.js'
+import Calculator from '../components/Home/calculator/Calculator.js'
 
 export const Home = () => {
 
@@ -17,6 +18,7 @@ export const Home = () => {
       <CarouselBanner />
       <Questions />
       <AppInformation />
+      <Calculator />
       <Weblog />
     </div>
   )
