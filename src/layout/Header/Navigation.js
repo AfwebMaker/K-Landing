@@ -11,7 +11,7 @@ function Navigation() {
 
     return (
         <>
-            <nav className='absolute maxLayout w-full flex bg-white h-[40px] top-[60px] px-5'>
+            <nav className='absolute maxLayout w-full lg:flex hidden transition-all bg-white h-[40px] top-[60px] px-5'>
                 <ul className='fcc h-full text-color-font-2 font-regular'>
                     <li onMouseEnter={() => {setSunNavIsActive(true)}} className='group hoverNav fcc pl-6 cursor-pointer h-full'>
                         <img className='ml-2' src={screwdriver} alt="ایکون خدمات ساختمانی" />
