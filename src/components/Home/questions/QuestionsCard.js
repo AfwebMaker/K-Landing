@@ -1,34 +1,52 @@
 import React from 'react'
-import QuestionsCards from './QuestionsCards'
+// assets
+import questionPoster from "../../../assets/images/home/questions/Image.png"
+//components
+import QuestionsCards from "./QuestionsCards"
 
-const QuestionsData = [
-    {
-        id:1,
-        title:"خدمات ساختمانی",
-        description:"کارگشا ارائه دهنده 0 تا 100 خدمات تخصصی ساختمان"
-    },
-    {
-        id:2,
-        title:"جلب اعتماد مشتری",
-        description:"احراز هویت و احراز صلاحیت متخصصین"
-    },
-    {
-        id:3,
-        title:"پشتیبانی",
-        description:"پشتیبانی تخصصی و حقوقی مشتری و متخصص"
-    },
+const categories = [
+  {
+    id: 1,
+    title: "خدمات ساختمانی",
+    href: '#',
+    imageSrc: questionPoster,
+    imageAlt: 'Brown leather key ring with brass metal loops and rivets on wood table.',
+    description:"پشتیبانی تخصصی و حقوقی مشتری و متخصص"
+  },
+  {
+    id: 2,
+    title: "جلب اعتماد مشتری",
+    href: '#',
+    imageSrc: questionPoster,
+    imageAlt: 'Natural leather mouse pad on white desk next to porcelain mug and keyboard.',
+    description:"احراز هویت و احراز صلاحیت متخصصین"
+  },
+  {
+    id: 3,
+    title: "پشتیبانی",
+    href: '#',
+    imageSrc: questionPoster,
+    imageAlt: 'Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.',
+    description:"کارگشا ارائه دهنده 0 تا 100 خدمات تخصصی ساختمان"  },
 ]
 
-function QuestionsCard() {
+export default function Example() {
   return (
-    <div className='w-full flex flex-wrap items-center justify-around gap-y-5'>
-        {
-            QuestionsData && QuestionsData.map(item => (
-                <QuestionsCards key={item.id} id={item.id} title={item.title} description={item.description} />
-            ))
-        }
+    <div className="bg-white">
+      <div className="mx-auto max-w-xl md:max-w-7xl">
+
+        <div className="space-y-12 md:grid md:grid-cols-3 md:gap-x-8 md:space-y-0">
+          {categories && categories.map((category) => (
+            <QuestionsCards
+              key={category.id}
+              title={category.title}
+              imageSrc={category.imageSrc}
+              imageAlt={category.imageAlt}
+              description={category.description}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
-
-export default QuestionsCard
