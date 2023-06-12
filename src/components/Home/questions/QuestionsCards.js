@@ -20,8 +20,8 @@ function QuestionsCards(props) {
                     className="h-full w-full object-cover object-center"
                 />
             </div>
-            <h3 className="mt-4 text-base font-semibold text-gray-900">{title}</h3>
-            <p className="mt-2 text-sm text-gray-500">{description}</p>
+            <h3 className="mt-4 text-base font-semibold text-color-font-3">{title}</h3>
+            <p className="mt-2 text-sm text-color-font-2">{description}</p>
         </div>
     )
 }

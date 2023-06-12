@@ -1,3 +1,4 @@
+import React from 'react'
 // assets
 import questionPoster from "../../../assets/images/home/questions/Image.png"
 //components
@@ -35,7 +36,7 @@ export default function Example() {
       <div className="mx-auto max-w-xl md:max-w-7xl">
 
         <div className="space-y-12 md:grid md:grid-cols-3 md:gap-x-8 md:space-y-0">
-          {categories.map((category) => (
+          {categories && categories.map((category) => (
             <QuestionsCards
               key={category.id}
               title={category.title}
