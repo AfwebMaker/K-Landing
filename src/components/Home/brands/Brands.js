@@ -1,4 +1,6 @@
 import React from 'react'
+//react router dom
+import { Link } from 'react-router-dom'
 // assets
 import AcademyMedium from "../../../assets/images/home/brands/Academy Medium.svg"
 import AutoSazeMedium from "../../../assets/images/home/brands/Auto Saze Medium.svg"
@@ -15,24 +17,24 @@ function Brands() {
           یک پلتفرم، برای تمامی نیاز ها
         </span>
         <div className='grid grid-cols-12 items-center justify-between w-full h-full '>
-          <div className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5'>
+          <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
             <img src={AcademyMedium} alt='برند آکادمی' />
-          </div>
-          <div className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5'>
+          </Link>
+          <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
             <img src={AutoSazeMedium} alt='برند اتوسازه' />
-          </div>
-          <div className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5'>
+          </Link>
+          <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
             <img src={KargoshaMedium} alt='برند اتو سازه' />
-          </div>
-          <div className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5'>
+          </Link>
+          <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
             <img src={MekaMedium} alt='برند مکا' />
-          </div>
-          <div className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5'>
+          </Link>
+          <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
             <img src={MetriChandMedium} alt='برند متری چند' />
-          </div>
-          <div className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5'>
+          </Link>
+          <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
             <img src={SindbadMedium} alt='برند سیندباد' />
-          </div>
+          </Link>
         </div>
 
       </div>
