@@ -1,6 +1,5 @@
 import React from 'react'
 import QuestionsCard from './QuestionsCard'
-import T from './ThreeColumnWithDescription'
 
 function Questions() {
     return (
@@ -10,12 +9,11 @@ function Questions() {
                     <h2 className="text-2xl font-bold tracking-tight text-color-font-3">
                         چرا کارگشا ؟
                     </h2>
-                    <p className="mt-4 text-base text-color-font-2">
+                    <p className="mt-4 text-sm md:text-base text-color-font-2 max-w-md md:max-w-max md:px-10">
                         کارگشا تنها پلتفرم تخصصی در حوزه ساختمان است که همه متخصصین این صنعت را زیر یک سقف جمع کرده است.
                     </p>
                 </div>
-                {/* <QuestionsCard /> */}
-                <T />
+                <QuestionsCard />
             </div>
         </div>
     )
