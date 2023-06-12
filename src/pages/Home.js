@@ -15,13 +15,22 @@ export const Home = () => {
 
   return (
     <div>
-      <div className='h-[100px] w-full bg-black'></div>
-      {/* <Hero /> */}
-      {/* <Brands /> */}
-      {/* <CarouselBanner /> */}
-      {/* <OfferBanner /> */}
+      <div className='h-[100px] w-full'></div>
+      {/* Hero no responsive */}
+      <Hero /> 
+      <Brands />
+
+      {/* CarouselBanner no responsive */}
+      <CarouselBanner />
+
+      {/* OfferBanner no responsive */}
+      <OfferBanner />
+
       <ProductsCategorization />
-      {/* <OfferBanner /> */}
+
+      {/* OfferBanner no responsive */}
+      <OfferBanner />
+
       <Questions />
       <AppInformation />
       <Calculator />
