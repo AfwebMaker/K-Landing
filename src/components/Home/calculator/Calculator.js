@@ -5,8 +5,8 @@ import calculator from '../../../assets/images/home/calculator/calculator.png'
 function Calculator() {
     return (
 
-        <div className="text-center flex items-center flex-col pt-10 pb-16">
-            <div className="maxLayout mx-5 md:px-[32px] w-full h-[600px] flex flex-col items-center justify-center">
+        <div className="relative h-0 pb-[46.15384%] xl:pb-0 xl:h-[600px]  text-center m-auto flex items-center justify-center">
+            <div className="absolute maxHeightCalculator w-full h-full inset-0 maxLayout m-auto md:px-[32px] flex flex-col items-center justify-center">
                 <div className='bg-[#EBEFED] w-full h-full rounded-xl flex'>
                     <div className='w-1/2 h-full pr-10 py-8 flex flex-col items-start justify-between'>
                         <div className='flex items-start flex-col'>
