@@ -36,7 +36,6 @@ function Brands() {
             <img src={SindbadMedium} alt='برند سیندباد' />
           </Link>
         </div>
-
       </div>
     </div>
   )

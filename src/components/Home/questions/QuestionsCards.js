@@ -1,9 +1,5 @@
 
 import React from 'react'
-//react router dom
-import { Link } from 'react-router-dom'
-// image
-import questionPoster from "../../../assets/images/home/questions/Image.png"
 
 function QuestionsCards(props) {
     const { imageSrc, imageAlt, title, description } = props

@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function BlogCard(props) {
-    const { title, description, href, imageSrc, imageAlt } = props
+    const { title, description, imageSrc, imageAlt } = props
     return (
         <div className="group relative bg-color-1 rounded-lg overflow-hidden pb-4 max-w-[300px]">
             <div className="aspect-h-3 aspect-w-4 overflow-hidden bg-gray-100">
