@@ -23,7 +23,7 @@ const categoriesData = [
 
 function Categories() {
     return (
-        <div className='w-full flex flex-wrap items-center justify-center gap-x-10 px-24'>
+        <div className='w-full h-full grid grid-cols-12 flex-wrap items-center justify-between md:gap-x-10 md:px-24'>
             {
                 categoriesData && categoriesData.map(item => (
                     <Category

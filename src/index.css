@@ -35,6 +35,10 @@
   max-height: 600px;
 }
 
+.maxHeightWeblog{
+  max-height: 600px;
+}
+
 .swiper-wrapper div {
   width: 100% !important;
   height: 100% !important;

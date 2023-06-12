@@ -1,40 +1,67 @@
 import React from 'react'
+// assets
+import cardPoster from "../../../assets/images/home/weblog/Card Image.png"
 // components
-import BlogCard from './BlogCard'
+import BlogCard from "./BlogCard"
 
-const blogData = [
-    {
-        id:1,
-        title:"پروژه های جدید انبوه سازی",
-        description:"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ..."
-    },
-    {
-        id:2,
-        title:"قوانین جدید اتحادیه جوشکاران",
-        description:"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ..."
-    },
-    {
-        id:3,
-        title:"افزایش قیمت طراحی",
-        description:"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ..."
-    },
-    {
-        id:4,
-        title:"فناوری جدید در طراحی لوله",
-        description:"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ..."
-    },
+const products = [
+  {
+    id: 1,
+    title: "قوانین جدید اتحادیه جوشکاران",
+    description: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ',
+    href: '#',
+    imageSrc: cardPoster,
+    imageAlt:
+      'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
+  },
+  {
+    id: 2,
+    title: "پروژه های جدید انبوه سازی",
+    description: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ',
+    href: '#',
+    imageSrc: cardPoster,
+    imageAlt:
+      'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
+  },
+  {
+    id: 3,
+    title: "افزایش قیمت طراحی",
+    description: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ',
+    href: '#',
+    imageSrc: cardPoster,
+    imageAlt:
+      'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
+  },
+  {
+    id: 4,
+    title: "فناوری جدید در طراحی لوله",
+    description: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ',
+    href: '#',
+    imageSrc: cardPoster,
+    imageAlt:
+      'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
+  },
+
+  // More products...
 ]
 
-function BlogCards() {
+export default function Example() {
   return (
-    <div className='w-full flex flex-wrap items-center justify-center gap-x-3 gap-y-5'>
-        {
-            blogData && blogData.map(item => (
-                <BlogCard key={item.id} id={item.id} title={item.title} description={item.description} />
-            ))
-        }
+    <div className="bg-white">
+      <div className="mx-auto max-w-2xl sm:px-6 sm:py-0 lg:max-w-7xl lg:px-0">
+        <div className="mt-6 grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+          {products.map((product) => (
+            <BlogCard
+              key={product.id}
+              title={product.title}
+              description={product.description}
+              href={product.href}
+              imageSrc={product.imageSrc}
+              imageAlt={product.imageAlt}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
-
-export default BlogCards

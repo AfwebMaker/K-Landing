@@ -5,16 +5,15 @@ import { Link } from "react-router-dom"
 function Category(props) {
     const { src, title, link } = props
     return (
-        <div className='mb-10'>
-            <Link to={link}>
-                <div className='w-32 h-32 bg-white boxShadowCustom hover:shadow-inner rounded-full fcc mb-5'>
-                    <img src={src} alt='' />
+        <div className='col-span-4 sm:col-span-3 lg:col-span-2 mt-5 flex items-center justify-center'>
+            <Link className='h-full w-full flex flex-col items-center justify-center' to={link}>
+                <div className='w-20 h-20 bg-white boxShadowCustom hover:shadow-inner rounded-full fcc'>
+                    <img className='w-14' src={src} alt='' />
                 </div>
-                <span className='w-36 h-40 text-color-font-2 text-xs'>
+                <span className='w-full h-14 text-color-font-2 font-bold text-[10px] fcc px-2'>
                     {title}
                 </span>
             </Link>
-
         </div>
     )
 }

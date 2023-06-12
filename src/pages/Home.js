@@ -16,12 +16,12 @@ export const Home = () => {
   return (
     <div>
       <div className='h-[100px] w-full bg-black'></div>
-      <Hero />
-      <Brands />
-      <CarouselBanner />
-      <OfferBanner />
+      {/* <Hero /> */}
+      {/* <Brands /> */}
+      {/* <CarouselBanner /> */}
+      {/* <OfferBanner /> */}
       <ProductsCategorization />
-      <OfferBanner />
+      {/* <OfferBanner /> */}
       <Questions />
       <AppInformation />
       <Calculator />
