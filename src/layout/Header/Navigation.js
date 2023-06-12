@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 //assets
 import screwdriver from '../../assets/images/header/Screwdriver.svg'
 import file from '../../assets/images/header/File.svg'
@@ -7,13 +7,16 @@ import wallet from '../../assets/images/header/Wallet.svg'
 import SubNavigation from './SubNavigation'
 
 function Navigation() {
+    const [subNavIsActive, setSunNavIsActive] = useState(false)
+
     return (
         <>
             <nav className='absolute maxLayout w-full flex bg-white h-[40px] top-[60px] px-5'>
                 <ul className='fcc h-full text-color-font-2 font-regular'>
-                    <li className='fcc pl-6 cursor-pointer'>
+                    <li onMouseEnter={() => {setSunNavIsActive(true)}} className='group hoverNav fcc pl-6 cursor-pointer h-full'>
                         <img className='ml-2' src={screwdriver} alt="ایکون خدمات ساختمانی" />
                         <span>خدمات ساختمانی</span>
+                        {subNavIsActive && <SubNavigation setSunNavIsActive={setSunNavIsActive} />}
                     </li>
                     <li className='fcc px-6 cursor-pointer'>
                         <span>خدمات فوری</span>
@@ -36,12 +39,7 @@ function Navigation() {
                     </li>
                 </ul>
             </nav>
-
-            <SubNavigation />
         </>
-
-
-
     )
 }
 
