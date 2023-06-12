@@ -41,8 +41,6 @@ const products = [
     imageAlt:
       'Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.',
   },
-
-  // More products...
 ]
 
 export default function Example() {
