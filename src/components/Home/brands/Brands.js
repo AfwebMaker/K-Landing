@@ -13,27 +13,27 @@ function Brands() {
   return (
     <div className="text-center flex items-center flex-col pt-10">
       <div className="maxLayout px-[20px] md:px-[32px] w-full flex flex-col items-center justify-center">
-        <span className='text-color-font-3 font-bold text-xl mb-8'>
+        <span className='text-color-font-3 font-bold text-lg md:text-xl mb-8'>
           یک پلتفرم، برای تمامی نیاز ها
         </span>
         <div className='grid grid-cols-12 items-center justify-between w-full h-full '>
           <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
-            <img src={AcademyMedium} alt='برند آکادمی' />
+            <img className='w-28' src={AcademyMedium} alt='برند آکادمی' />
           </Link>
           <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
-            <img src={AutoSazeMedium} alt='برند اتوسازه' />
+            <img className='w-28' src={AutoSazeMedium} alt='برند اتوسازه' />
           </Link>
           <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
-            <img src={KargoshaMedium} alt='برند اتو سازه' />
+            <img className='w-28' src={KargoshaMedium} alt='برند اتو سازه' />
           </Link>
           <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
-            <img src={MekaMedium} alt='برند مکا' />
+            <img className='w-28' src={MekaMedium} alt='برند مکا' />
           </Link>
           <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
-            <img src={MetriChandMedium} alt='برند متری چند' />
+            <img className='w-28' src={MetriChandMedium} alt='برند متری چند' />
           </Link>
           <Link to="#" className='h-16 col-span-6 sm:col-span-4 lg:col-span-2 fcc mb-5 hover:animate-pulse'>
-            <img src={SindbadMedium} alt='برند سیندباد' />
+            <img className='w-28' src={SindbadMedium} alt='برند سیندباد' />
           </Link>
         </div>
       </div>

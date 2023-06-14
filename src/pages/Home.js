@@ -16,7 +16,7 @@ export const Home = () => {
 
   return (
     <div>
-      <div className='h-[100px] w-full bg-black'></div>
+      <div className='h-[100px] w-full'></div>
       {/* Hero no responsive */}
       <Hero />
       {/* <S /> */}

@@ -40,7 +40,7 @@ function Hero() {
                 <div className='col-span-12 lg:col-span-6 fcc '>
                     <img className='object-contain h-full left-0 top-0 drop-shadow-2xl' src={heroImage} alt="بنر" />
                 </div>
-                <div className='absolute bottom-10 w-[95%] max-w-[1000px] left-0 right-0 m-auto col-span-12 backdrop-filter backdrop-blur-xl overflow-x-scroll hideScroll h-[120px] rounded-xl shadow-xl'>
+                <div className='sm:absolute sm:bottom-10 w-[95%] max-w-[1000px] left-0 right-0 m-auto col-span-12 backdrop-filter backdrop-blur-xl overflow-x-scroll hideScroll h-[120px] rounded-xl shadow-xl'>
                     <div className='w-[1000px] h-full flex'>
                         <div className='fcc flex-col px-2 py-4 h-full w-[150px] text-center'>
                             <img className='h-[80%]' src={loader} alt="تخریب و خاکبرداری" />
