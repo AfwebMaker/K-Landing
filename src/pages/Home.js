@@ -2,6 +2,7 @@ import React from 'react'
 // components
 import Weblog from '../components/Home/weblog/Weblog.js'
 import Hero from '../components/Home/hero/Hero.js'
+import S from '../components/Home/hero/SplitWithImage.js'
 import CarouselBanner from '../components/Home/carouselBanner/CarouselBanner.js'
 import Questions from '../components/Home/questions/Questions.js'
 import AppInformation from '../components/Home/appInformation/AppInformation.js'
@@ -15,9 +16,10 @@ export const Home = () => {
 
   return (
     <div>
-      <div className='h-[100px] w-full'></div>
+      <div className='h-[100px] w-full bg-black'></div>
       {/* Hero no responsive */}
-      <Hero /> 
+      <Hero />
+      {/* <S /> */}
       <Brands />
 
       {/* CarouselBanner no responsive */}

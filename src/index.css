@@ -9,9 +9,6 @@
 /* Hide scrollbar */
 .hideScroll::-webkit-scrollbar {
   display: none;
-}
-
-.hideScroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
