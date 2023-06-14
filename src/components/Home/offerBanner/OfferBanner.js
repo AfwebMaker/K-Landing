@@ -2,11 +2,11 @@ import React from 'react'
 
 import bathroom from "../../../assets/images/home/offerBanner/Bathroom.png"
 import decoration from "../../../assets/images/home/offerBanner/decoration.png"
-import facilities from "../../../assets/images/home/offerBanner/facilities.png"
-import coloring from "../../../assets/images/home/offerBanner/coloring.png"
+// import facilities from "../../../assets/images/home/offerBanner/facilities.png"
+// import coloring from "../../../assets/images/home/offerBanner/coloring.png"
 
 function offerBanner(props) {
-  const { } = props
+  // const { } = props
 
 
   return (
