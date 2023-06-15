@@ -11,7 +11,7 @@ import ProductsCategorization from '../components/Home/productsCategorization/Pr
 
 import Calculator from '../components/Home/calculator/Calculator.js'
 
-export const Home = () => {
+const Home = () => {
 
   return (
     <div>
@@ -38,3 +38,4 @@ export const Home = () => {
     </div>
   )
 }
+export default Home
