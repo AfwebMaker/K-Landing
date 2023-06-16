@@ -99,8 +99,9 @@ function SubNavigation(props) {
   ]
 
   return (
-    <div className='fixed z-20 w-full h-[calc(100vh-100px)] top-[100px] left-0 backdrop-blur hidden items-start justify-center group-hover:flex' >
-      <div onMouseLeave={() => {props.setSunNavIsActive(false)}} className='max-w-[1220px] w-[calc(100%-80px)] max-h-[432px] h-[90%] pt-8'>
+    <div className='fixed z-20 w-full h-[calc(100vh-100px)] top-[100px] left-0  hidden items-start justify-center group-hover:flex' >
+      <div onMouseEnter={() => {props.setSunNavIsActive(false)}} className='absolute w-full h-full backdrop-blur'></div>
+      <div className='max-w-[1220px] w-[calc(100%-80px)] max-h-[432px] h-[90%] pt-8 z-20'>
         <div className='w-full h-full rounded-xl overflow-hidden boxShadowCustom'>
           <div className='w-full flex items-center justify-between px-8 h-[70px] border-gray-400 border-b bg-white'>
             <div className='h-full fcc'>
