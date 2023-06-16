@@ -15,7 +15,6 @@ const Routers = () => {
             <Route path='/categories' element={<Categories />} />
             <Route path='/categories/:slug' element={<Category />} />
             <Route path='*' element={<Home />} />
-            {/* <Route path='*' element={<h1>چیزی اینجا نیست!</h1>} /> */}
         </Routes>
     );
 };

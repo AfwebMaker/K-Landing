@@ -15,8 +15,8 @@ function Hero() {
     return (
         <div className="text-center flex items-center flex-col pt-10">
             <div className="relative maxLayout grid grid-cols-12 px-[20px] md:px-[32px] w-full">
-                <div className='col-span-12 lg:col-span-6 lg:pt-32 lg:pr-28 flex flex-col items-center justify-start text-3xl'>
-                    <div className='flex mb-5 text-xl'>
+                <div className='col-span-12 lg:col-span-6 lg:pt-32 lg:pr-28 flex flex-col items-center lg:items-start justify-start text-3xl'>
+                    <div className='flex mb-5 text-xl md:text-2xl xl:text-3xl'>
                         <span className='fcc ml-2'>
                             ثبت درخواست خدمات
                         </span>

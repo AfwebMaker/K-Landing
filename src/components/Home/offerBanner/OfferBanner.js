@@ -2,6 +2,7 @@ import React from 'react'
 
 import bathroom from "../../../assets/images/home/offerBanner/Bathroom.png"
 import decoration from "../../../assets/images/home/offerBanner/decoration.png"
+import { Link } from 'react-router-dom'
 // import facilities from "../../../assets/images/home/offerBanner/facilities.png"
 // import coloring from "../../../assets/images/home/offerBanner/coloring.png"
 
@@ -18,9 +19,9 @@ function offerBanner(props) {
               <div className=' text-[min(2.5vw,5vh)] sm:text-sm lg:text-base pl-[50%] flex flex-col items-start justify-center mb-2 leading-[160%]'>
                 <span className='text-right' >تعمیرات حمام و دستشویی خانه‌ات را به ما بسپار</span>
               </div>
-              <div className='bg-white rounded-md text-[10px] fcc py-1 max-w-[80px] text-[#E8A26E]'>
+              <Link to="#" className='bg-white rounded-md text-[10px] fcc py-1 max-w-[80px] text-[#E8A26E]'>
                 مشاهده بیشتر...
-              </div>
+              </Link>
             </div>
             <div>
               <img src={decoration} alt='' />
@@ -31,9 +32,9 @@ function offerBanner(props) {
               <div className=' text-[min(2.5vw,5vh)] sm:text-sm lg:text-base pl-[50%] flex flex-col items-start justify-center mb-2 leading-[160%]'>
                 <span className='text-right' >تعمیرات حمام و دستشویی خانه‌ات را به ما بسپار</span>
               </div>
-              <div className='bg-white rounded-md text-[10px] fcc py-1 max-w-[80px] text-[#6EBDE6]'>
+              <Link to="#" className='bg-white rounded-md text-[10px] fcc py-1 max-w-[80px] text-[#6EBDE6]'>
                 مشاهده بیشتر...
-              </div>
+              </Link>
             </div>
             <div>
               <img src={bathroom} alt='' />
