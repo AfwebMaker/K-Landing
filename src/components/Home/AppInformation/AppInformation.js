@@ -25,14 +25,14 @@ function AppInformation() {
                             <p className='text-color-font-2 text-xs md:text-sm sm:px-14 md:px-5 lg:px-10 leading-6 mb-8 md:mb-10'>
                                 شما می توانید به صورت کامل از تمام امکانات کارگشا در سوپر اپلیکیشن کارگشا استفاده کنید و در خواست های خودتان را در آنجا ثبت کنید .
                             </p>
-                            <div className='text-white w-full fcc flex-col md:flex-row gap-y-5 px-10 md:px-3'>
+                            <div className='text-white w-full fcc flex-col md:flex-row gap-y-5 px-10 md:px-1'>
                                 <div className='bg-color-3 shadow-xl max-w-[200px] w-full py-3 rounded-lg text-xs md:ml-3 fcc'>
                                     دانلود اپلیکیشن IOS
-                                    <img className='w-5 mr-2' src={Appel} alt='دانلود اپلیکیشن IOS' />
+                                    <img className='w-4 mr-2' src={Appel} alt='دانلود اپلیکیشن IOS' />
                                 </div>
                                 <div className='bg-color-3 shadow-xl max-w-[200px] w-full py-3 rounded-lg text-xs fcc'>
                                     دانلود اپلیکیشن اندروید
-                                    <img className='w-5 mr-2' src={Android} alt='دانلود اپلیکیشن اندروید' />
+                                    <img className='w-4 mr-2' src={Android} alt='دانلود اپلیکیشن اندروید' />
                                 </div>
                             </div>
                         </div>
