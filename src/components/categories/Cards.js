@@ -68,7 +68,6 @@ export default function Cards() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl md:max-w-7xl">
-
         <div className="md:grid md:grid-cols-3 md:gap-x-8">
           {categories && categories.map((category) => (
             <Card

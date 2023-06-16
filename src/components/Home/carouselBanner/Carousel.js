@@ -7,6 +7,7 @@ import bannerImage from "../../../assets/images/home/CarouselBanner/banner.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Autoplay, EffectFade } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -31,22 +32,30 @@ const Carousel = () => {
 
             <SwiperSlide>
                 <div className="w-full fcc h-full bg-red-500 relative">
-                    <img className='h-full md:h-auto object-cover object-center' src={bannerImage} alt='' />
+                    <Link className='w-full h-full' to="#">
+                        <img className='h-full md:h-auto object-cover object-center' src={bannerImage} alt='' />
+                    </Link>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="w-full fcc h-full bg-red-500 relative">
-                    <img className='h-full' src={bannerImage} alt='' />
+                    <Link className='w-full h-full' to="#">
+                        <img className='h-full md:h-auto object-cover object-center' src={bannerImage} alt='' />
+                    </Link>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="w-full fcc h-full bg-red-500 relative">
-                    <img className='h-full' src={bannerImage} alt='' />
+                    <Link className='w-full h-full' to="#">
+                        <img className='h-full md:h-auto object-cover object-center' src={bannerImage} alt='' />
+                    </Link>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
                 <div className="w-full fcc h-full bg-red-500 relative">
-                    <img className='h-full' src={bannerImage} alt='' />
+                    <Link className='w-full h-full' to="#">
+                        <img className='h-full md:h-auto object-cover object-center' src={bannerImage} alt='' />
+                    </Link>
                 </div>
             </SwiperSlide>
         </Swiper>
