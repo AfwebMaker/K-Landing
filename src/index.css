@@ -32,7 +32,7 @@
   max-height: 600px;
 }
 
-.maxHeightWeblog{
+.maxHeightWeblog {
   max-height: 600px;
 }
 
@@ -67,4 +67,18 @@ span.swiper-pagination-bullet {
   background-image: url('./assets/images/home/AppInformation/ApplicationBack.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/***************** custom scroll *******************/
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(227, 227, 227);
+}
+
+body::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
 }

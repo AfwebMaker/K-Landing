@@ -6,8 +6,10 @@ import search from '../../assets/images/header/Search.svg'
 import hamburger_menu from '../../assets/images/header/hamburger_menu.svg'
 //components
 import Navigation from './Navigation'
+import MobileNavigation from './MobileNavigation'
 
 function Header() {
+  const [hamburgerMenuIsActive, setHamburgerMenuIsActive] = useState(false);
   const [menuIsActive, setMenuIsActive] = useState(false);
 
   //detect scrollTop largest 100 or not
@@ -19,11 +21,21 @@ function Header() {
     return () => window.removeEventListener('scroll', onScroll);
   }, [menuIsActive]);
 
+  // //disable body scroll when hamburger menu active
+  // const root = document.getElementsByTagName('body')[0]
+  // useEffect(() => {
+  //   if (hamburgerMenuIsActive) {
+  //     root.style.overflowY = "hidden"
+  //   } else {
+  //     root.style.overflowY = "auto"
+  //   }
+  // }, [hamburgerMenuIsActive, root.style])
+
   return (
     <header className={`w-full flex justify-start items-center fixed z-20 bg-white flex-col h-[100px] ${menuIsActive ? 'shadow-xl' : ''}`} >
       <div className={`maxLayout flex justify-between items-center w-full px-5 z-10 transition-all bg-white ${menuIsActive ? 'lg:h-[60px] h-full' : 'h-full'}`}>
-        <div className='h-full flex lg:hidden w-6'>
-          <img src={hamburger_menu} alt="آیکون منو" />
+        <div className='h-full flex lg:hidden w-6 cursor-pointer'>
+          <img onClick={() => { setHamburgerMenuIsActive(!hamburgerMenuIsActive) }} src={hamburger_menu} alt="آیکون منو" />
         </div>
         <div className='h-full flex items-center lg:justify-center justify-between'>
           <img className='h-[36px] lg:ml-6 ' src={KargoshaLogo} alt="لوگو کارگشا" />
@@ -49,6 +61,7 @@ function Header() {
       </div>
 
       <Navigation />
+      <MobileNavigation hamburgerMenuIsActive={hamburgerMenuIsActive} />
     </header>
   )
 }
