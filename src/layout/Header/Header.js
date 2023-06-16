@@ -11,6 +11,7 @@ import MobileNavigation from './MobileNavigation'
 function Header() {
   const [hamburgerMenuIsActive, setHamburgerMenuIsActive] = useState(false);
   const [menuIsActive, setMenuIsActive] = useState(false);
+  const [subNavIsActive, setSubNavIsActive] = useState(false);
 
   //detect scrollTop largest 100 or not
   useEffect(() => {
@@ -20,6 +21,10 @@ function Header() {
 
     return () => window.removeEventListener('scroll', onScroll);
   }, [menuIsActive]);
+
+  const onActiveSubNav = (state) => {
+    setSubNavIsActive(state)
+  }
 
   // //disable body scroll when hamburger menu active
   // const root = document.getElementsByTagName('body')[0]
@@ -32,36 +37,41 @@ function Header() {
   // }, [hamburgerMenuIsActive, root.style])
 
   return (
-    <header className={`w-full flex justify-start items-center fixed z-20 bg-white flex-col h-[100px] ${menuIsActive ? 'shadow-xl' : ''}`} >
-      <div className={`maxLayout flex justify-between items-center w-full px-5 z-10 transition-all bg-white ${menuIsActive ? 'lg:h-[60px] h-full' : 'h-full'}`}>
-        <div className='h-full flex lg:hidden w-6 cursor-pointer'>
-          <img onClick={() => { setHamburgerMenuIsActive(!hamburgerMenuIsActive) }} src={hamburger_menu} alt="آیکون منو" />
-        </div>
-        <div className='h-full flex items-center lg:justify-center justify-between'>
-          <img className='h-[36px] lg:ml-6 ' src={KargoshaLogo} alt="لوگو کارگشا" />
-          <div className={`relative transition-all overflow-hidden lg:flex justify-center items-center h-[37px] hidden ${menuIsActive ? 'w-[550px]' : 'w-0'}`}>
-            <img className='h-[50%] m-4 right-0 absolute' src={search} alt="ایکون سرچ" />
-            <input className={`bg-color-1 h-full w-full font-light text-sm rounded-lg pr-12 focus:outline-0 `} type="text" placeholder='خدمت ساختمانی که به دنبال آن هستید را وارد کنید.' />
+    <header className={`${subNavIsActive ? 'pr-2' : 'pr-0'} w-full flex justify-start items-center fixed z-20 bg-white flex-col h-[100px] ${menuIsActive ? 'shadow-xl' : ''}`} >
+      <div className={`relative maxLayout flex justify-between items-center w-full z-10 transition-all bg-white ${menuIsActive ? 'lg:h-[60px] h-full' : 'h-full'}`}>
+        <div className={`relative maxLayout flex justify-between items-center w-full px-5 z-10 bg-white h-full`}>
+          <div className='h-full flex lg:hidden w-6 cursor-pointer'>
+            <img onClick={() => { setHamburgerMenuIsActive(!hamburgerMenuIsActive) }} src={hamburger_menu} alt="آیکون منو" />
+          </div>
+          <div className='h-full flex items-center lg:justify-center justify-between'>
+            <img className='h-[36px] lg:ml-6 ' src={KargoshaLogo} alt="لوگو کارگشا" />
+            <div className={`relative transition-all overflow-hidden lg:flex justify-center items-center h-[37px] hidden ${menuIsActive ? 'w-[550px]' : 'w-0'}`}>
+              <img className='h-[50%] m-4 right-0 absolute' src={search} alt="ایکون سرچ" />
+              <input className={`bg-color-1 h-full w-full font-light text-sm rounded-lg pr-12 focus:outline-0 `} type="text" placeholder='خدمت ساختمانی که به دنبال آن هستید را وارد کنید.' />
+            </div>
+          </div>
+          <div className='flex justify-center items-center lg:hidden w-6 h-full'>
+            <img src={person} alt="ایکون متخصص هستم" />
+          </div>
+          <div className='text-sm lg:flex justify-center items-center hidden'>
+            <div className='ml-4 fcc'>
+              <img className='h-4' src={person} alt="ایکون متخصص هستم" />
+              <span className='mr-2 text-color-font-2'>متخصص هستم</span>
+            </div>
+            <button className='bg-color-font-3 rounded-md text-white p-2 font-thin'>
+              <span className='font-medium m-1'>ورود</span>
+              یا
+              <span className='font-medium m-1'>عضویت</span>
+            </button>
           </div>
         </div>
-        <div className='flex justify-center items-center lg:hidden w-6 h-full'>
-          <img src={person} alt="ایکون متخصص هستم" />
-        </div>
-        <div className='text-sm lg:flex justify-center items-center hidden'>
-          <div className='ml-4 fcc'>
-            <img className='h-4' src={person} alt="ایکون متخصص هستم" />
-            <span className='mr-2 text-color-font-2'>متخصص هستم</span>
-          </div>
-          <button className='bg-color-font-3 rounded-md text-white p-2 font-thin'>
-            <span className='font-medium m-1'>ورود</span>
-            یا
-            <span className='font-medium m-1'>عضویت</span>
-          </button>
-        </div>
+
+
+        <Navigation onActiveSubNav={onActiveSubNav} />
+        <MobileNavigation hamburgerMenuIsActive={hamburgerMenuIsActive} />
       </div>
 
-      <Navigation />
-      <MobileNavigation hamburgerMenuIsActive={hamburgerMenuIsActive} />
+
     </header>
   )
 }

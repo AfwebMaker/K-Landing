@@ -6,8 +6,13 @@ import friends from '../../assets/images/header/Friends.svg'
 import wallet from '../../assets/images/header/Wallet.svg'
 import SubNavigation from './SubNavigation'
 
-function Navigation() {
-    const [subNavIsActive, setSunNavIsActive] = useState(false)
+function Navigation(props) {
+    const [subNavIsActive, setSunNavIsActive] = useState(false);
+
+    //detect subNav active for add header padding 
+    useEffect(() => {
+        props.onActiveSubNav(subNavIsActive)
+    }, [props, subNavIsActive])
 
     //disable body scroll when hamburger menu active
     const body = document.getElementsByTagName('body')[0]
@@ -21,9 +26,9 @@ function Navigation() {
 
     return (
         <>
-            <nav className='absolute maxLayout w-full lg:flex hidden transition-all bg-white h-[40px] top-[60px] px-5 text-sm'>
+            <nav className='absolute maxLayout w-full lg:flex hidden transition-all right-0 bg-white h-[40px] top-[60px] px-5 text-sm'>
                 <ul className='fcc h-full text-color-font-2 font-regular'>
-                    <li onMouseEnter={() => { setSunNavIsActive(true) }} className='group hoverNav fcc pl-6 cursor-pointer h-full'>
+                    <li onMouseLeave={() => {setSunNavIsActive(false)}} onMouseEnter={() => { setSunNavIsActive(true) }} className='group fcc pl-6 cursor-pointer h-full'>
                         <img className='ml-2' src={screwdriver} alt="ایکون خدمات ساختمانی" />
                         <span>خدمات ساختمانی</span>
                         {subNavIsActive && <SubNavigation setSunNavIsActive={setSunNavIsActive} />}
