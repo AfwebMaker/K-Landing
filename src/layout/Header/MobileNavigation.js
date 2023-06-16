@@ -33,7 +33,7 @@ function MobileNavigation(props) {
 
     return (
         <div className={`top-0 right-0 w-full h-screen absolute z-40 flex lg:hidden ${props.hamburgerMenuIsActive ? 'flex' : 'hidden'}`}>
-            <div onClick={() => { props.setHamburgerMenuIsActive(false) }} className={`w-full h-full bg-[#0000005d]`}></div>
+            <div onClick={() => { props.setHamburgerMenuIsActive(false) }} className={`cursor-pointer w-full h-full bg-[#00000078]`}></div>
             <div className={`customScrollbar bg-white overflow-y-auto absolute h-screen z-30 transition-all py-4 top-0 w-[312px] ${props.hamburgerMenuIsActive ? 'right-0' : 'right-[-100%]'} text-color-font-2`}>
 
                 <div className='h-10 border-b pb-4 px-4'>
