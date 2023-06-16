@@ -3,11 +3,11 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 function Card(props) {
-    const { imageSrc, imageAlt, title } = props
+    const { imageSrc, imageAlt, title, slug } = props
 
     return (
         <div className="group block mb-10">
-            <Link className='w-full h-full' to="/categories/decorations">
+            <Link className='w-full h-full' to={slug}>
                 <div
                     aria-hidden="true"
                     className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
