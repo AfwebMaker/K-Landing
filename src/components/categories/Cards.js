@@ -12,6 +12,7 @@ const categories = [
     href: '#',
     imageSrc: questionPoster,
     imageAlt: 'Brown leather key ring with brass metal loops and rivets on wood table.',
+    slug: "decorations",
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const categories = [
     href: '#',
     imageSrc: questionPoster,
     imageAlt: 'Natural leather mouse pad on white desk next to porcelain mug and keyboard.',
+    slug: "car",
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ const categories = [
     href: '#',
     imageSrc: questionPoster,
     imageAlt: 'Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.',
+    slug: "#",
   },
   {
     id: 4,
@@ -33,6 +36,7 @@ const categories = [
     href: '#',
     imageSrc: questionPoster,
     imageAlt: 'Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.',
+    slug: "#",
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ const categories = [
     href: '#',
     imageSrc: questionPoster,
     imageAlt: 'Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.',
+    slug: "#",
   },
   {
     id: 6,
@@ -47,6 +52,7 @@ const categories = [
     href: '#',
     imageSrc: questionPoster,
     imageAlt: 'Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.',
+    slug: "#",
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ const categories = [
     href: '#',
     imageSrc: questionPoster,
     imageAlt: 'Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.',
+    slug: "#",
   },
 ]
 
@@ -69,6 +76,7 @@ export default function Cards() {
               title={category.title}
               imageSrc={category.imageSrc}
               imageAlt={category.imageAlt}
+              slug={category.slug}
             />
           ))}
         </div>

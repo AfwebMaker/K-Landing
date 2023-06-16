@@ -36,12 +36,23 @@
   max-height: 600px;
 }
 
+.maxHeightCarousel{
+  max-height: 350px;
+}
+
+.backgroundApp {
+  background-image: url('./assets/images/home/AppInformation/ApplicationBack.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Style Slider Swiper */
 .swiper-wrapper div {
   width: 100% !important;
   height: 100% !important;
 }
 
-.swiper-slide {
+div.swiper-slide {
   width: 100%;
   height: 100%;
 }
@@ -49,7 +60,7 @@
 .swiper {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 span.swiper-pagination-bullet-active {
@@ -63,8 +74,7 @@ span.swiper-pagination-bullet {
   opacity: 1;
 }
 
-.backgroundApp {
-  background-image: url('./assets/images/home/AppInformation/ApplicationBack.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+.shape{
+  shape-outside: inset(20px 10px 10px 10px);
+  shape-margin: 2%;
 }
