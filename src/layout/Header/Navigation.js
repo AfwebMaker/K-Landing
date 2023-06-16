@@ -31,7 +31,7 @@ function Navigation(props) {
                     <li onMouseLeave={() => {setSunNavIsActive(false)}} onMouseEnter={() => { setSunNavIsActive(true) }} className='group fcc pl-6 cursor-pointer h-full'>
                         <img className='ml-2' src={screwdriver} alt="ایکون خدمات ساختمانی" />
                         <span>خدمات ساختمانی</span>
-                        {subNavIsActive && <SubNavigation setSunNavIsActive={setSunNavIsActive} />}
+                        {subNavIsActive && <SubNavigation menuContent={props.menuContent} setSunNavIsActive={setSunNavIsActive} />}
                     </li>
                     <li className='fcc px-6 cursor-pointer'>
                         <span>خدمات فوری</span>

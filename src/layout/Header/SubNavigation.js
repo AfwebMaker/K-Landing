@@ -1,102 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+//components
+import SubNavigationItem from './SubNavigationItem'
 
 function SubNavigation(props) {
-  const menuContent = [
-    {
-      title: 'تخریب و خاکبرداری',
-      items: [
-        {
-          title: 'تخریب',
-          link: 'https://saaland.ir'
-        },
-        {
-          title: 'خاکبرداری',
-          link: ''
-        },
-        {
-          title: 'حمل و نقل نخاله',
-          link: ''
-        }
-      ]
-    },
-    {
-      title: 'اجرای سازه',
-      items: [
-        {
-          title: 'سازه',
-          link: ''
-        },
-        {
-          title: 'فوندانسیون',
-          link: ''
-        },
-        {
-          title: 'سقف',
-          link: ''
-        },
-        {
-          title: 'پایدارسازی',
-          link: ''
-        }
-      ]
-    },
-    {
-      title: 'تاسیسات',
-      items: [
-        {
-          title: 'تاسیسات الکتریکی',
-          link: ''
-        },
-        {
-          title: 'تاسیسات مکانیکی',
-          link: ''
-        },
-        {
-          title: 'هوشمند سازی',
-          link: ''
-        }
-      ]
-    },
-    {
-      title: 'امور ساختمانی',
-      items: [
-        {
-          title: 'سفت کاری',
-          link: ''
-        },
-        {
-          title: 'نازک کاری',
-          link: ''
-        },
-        {
-          title: 'عایق کاری',
-          link: ''
-        },
-        {
-          title: 'نما کاری',
-          link: ''
-        },
-        {
-          title: 'محوطه سازی',
-          link: ''
-        },
-        {
-          title: 'تزئینات',
-          link: ''
-        }
-      ]
-    },
-    {
-      title: 'تعمیر و نگهداری',
-      items: [
-        {
-          title: 'تعمیر نگه داری',
-          link: ''
-        }
-      ]
-    },
-  ]
 
   return (
     <div className='fixed z-20 w-full h-[calc(100vh-100px)] top-[100px] left-0  hidden items-start justify-center group-hover:flex' >
@@ -125,22 +31,11 @@ function SubNavigation(props) {
           </div>
           <div className='bg-white w-full max-h-[330px] h-[84%] overflow-hidden overflow-y-auto'>
             <div className='w-full flex items-center justify-between h-[330px] overflow-hidden overflow-y-auto py-5 px-20'>
-              {menuContent.map((val, i) => (
-                <div key={i} className='flex flex-col h-full w-1/5'>
-                  <span className='text-color-font-3 text-sm'>{val.title}</span>
-                  <div>
-                    <ul className='flex flex-col'>
-                      {val.items.map((item, j) => (
-                        <li key={j} className='my-3 text-xs hover:text-red-600'>
-                          <Link to={item.link}>
-                            {item.title}
-                          </Link>
-                        </li>
-                      ))
-                      }
-                    </ul>
-                  </div>
-                </div>
+              {props.menuContent.map((values, i) => (
+                <SubNavigationItem 
+                  key={i}
+                  values={values}
+                />
               ))}
             </div>
           </div>
