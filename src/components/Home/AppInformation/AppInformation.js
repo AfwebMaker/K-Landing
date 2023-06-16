@@ -11,15 +11,18 @@ function AppInformation() {
         <div className="text-center flex items-center flex-col py-10 h-[400px] md:h-auto">
             <div className="maxLayout px-[20px] md:px-[32px] w-full h-full flex flex-col items-center justify-center">
                 <div className=' w-full h-full flex items-center justify-start'>
-                    <div className='relative w-full h-full'>
+                    <div className='relative w-full h-full backgroundApp rounded-lg'>
                         <div className='hidden md:flex flex-col items-center justify-center'>
                             <img className='flex' src={banner} alt='' />
                         </div>
-                        <div className='w-full md:w-1/2 h-full flex flex-col items-center justify-center absolute top-0 md:pr-5'>
-                            <span className='text-color-font-3 font-bold text-lg md:text-xl mb-5 md:mb-5'>
+                        {/* <div className='aspect-[1] flex md:hidden flex-col items-center justify-center'>
+                            <img className='flex h-full object-cover object-center' src={applicationBack} alt='' />
+                        </div> */}
+                        <div className='px-2 md:px-0 w-full md:w-1/2 h-full flex flex-col items-center justify-center absolute top-0 md:pr-5'>
+                            <span className='text-color-font-3 font-bold text-lg md:text-xl mb-2 md:mb-5'>
                                 اپلیکیشن موبایل کارگشا
                             </span>
-                            <p className='text-color-font-2 text-sm sm:px-14 md:px-5 lg:px-10 leading-6 mb-10 md:mb-10'>
+                            <p className='text-color-font-2 text-xs md:text-sm sm:px-14 md:px-5 lg:px-10 leading-6 mb-8 md:mb-10'>
                                 شما می توانید به صورت کامل از تمام امکانات کارگشا در سوپر اپلیکیشن کارگشا استفاده کنید و در خواست های خودتان را در آنجا ثبت کنید .
                             </p>
                             <div className='text-white w-full fcc flex-col md:flex-row gap-y-5 px-10 md:px-3'>

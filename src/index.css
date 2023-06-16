@@ -63,8 +63,8 @@ span.swiper-pagination-bullet {
   opacity: 1;
 }
 
-.backgroundAppInformation {
-  background-image: url('./assets/images/home/AppInformation/AppInformationImages.png');
+.backgroundApp {
+  background-image: url('./assets/images/home/AppInformation/ApplicationBack.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
