@@ -8,7 +8,7 @@ const categories = [
   {
     id: 1,
     title: "خدمات ساختمانی",
-    href: '#',
+    href: 'https://kargosha.com/categories/provision-of-technical-and-executive-personnel',
     imageSrc: questionPoster,
     imageAlt: 'Brown leather key ring with brass metal loops and rivets on wood table.',
     description:"پشتیبانی تخصصی و حقوقی مشتری و متخصص"
@@ -16,7 +16,7 @@ const categories = [
   {
     id: 2,
     title: "جلب اعتماد مشتری",
-    href: '#',
+    href: 'https://kargosha.com/expert/signup',
     imageSrc: questionPoster,
     imageAlt: 'Natural leather mouse pad on white desk next to porcelain mug and keyboard.',
     description:"احراز هویت و احراز صلاحیت متخصصین"
@@ -24,7 +24,7 @@ const categories = [
   {
     id: 3,
     title: "پشتیبانی",
-    href: '#',
+    href: 'https://kargosha.com/contact-us',
     imageSrc: questionPoster,
     imageAlt: 'Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.',
     description:"کارگشا ارائه دهنده 0 تا 100 خدمات تخصصی ساختمان"  },
@@ -43,6 +43,7 @@ export default function Example() {
               imageSrc={category.imageSrc}
               imageAlt={category.imageAlt}
               description={category.description}
+              href={category.href}
             />
           ))}
         </div>
