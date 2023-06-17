@@ -9,6 +9,102 @@ import Navigation from './Navigation'
 import MobileNavigation from './MobileNavigation'
 
 function Header() {
+  const menuContent = [
+    {
+      title: 'تخریب و خاکبرداری',
+      items: [
+        {
+          title: 'تخریب',
+          link: 'https://saaland.ir'
+        },
+        {
+          title: 'خاکبرداری',
+          link: ''
+        },
+        {
+          title: 'حمل و نقل نخاله',
+          link: ''
+        }
+      ]
+    },
+    {
+      title: 'اجرای سازه',
+      items: [
+        {
+          title: 'سازه',
+          link: ''
+        },
+        {
+          title: 'فوندانسیون',
+          link: ''
+        },
+        {
+          title: 'سقف',
+          link: ''
+        },
+        {
+          title: 'پایدارسازی',
+          link: ''
+        }
+      ]
+    },
+    {
+      title: 'تاسیسات',
+      items: [
+        {
+          title: 'تاسیسات الکتریکی',
+          link: ''
+        },
+        {
+          title: 'تاسیسات مکانیکی',
+          link: ''
+        },
+        {
+          title: 'هوشمند سازی',
+          link: ''
+        }
+      ]
+    },
+    {
+      title: 'امور ساختمانی',
+      items: [
+        {
+          title: 'سفت کاری',
+          link: ''
+        },
+        {
+          title: 'نازک کاری',
+          link: ''
+        },
+        {
+          title: 'عایق کاری',
+          link: ''
+        },
+        {
+          title: 'نما کاری',
+          link: ''
+        },
+        {
+          title: 'محوطه سازی',
+          link: ''
+        },
+        {
+          title: 'تزئینات',
+          link: ''
+        }
+      ]
+    },
+    {
+      title: 'تعمیر و نگهداری',
+      items: [
+        {
+          title: 'تعمیر نگه داری',
+          link: ''
+        }
+      ]
+    },
+  ]
+
   const [hamburgerMenuIsActive, setHamburgerMenuIsActive] = useState(false);
   const [menuIsActive, setMenuIsActive] = useState(false);
   const [subNavIsActive, setSubNavIsActive] = useState(false);
@@ -67,8 +163,16 @@ function Header() {
         </div>
 
 
-        <Navigation onActiveSubNav={onActiveSubNav} />
-        <MobileNavigation hamburgerMenuIsActive={hamburgerMenuIsActive} />
+        <Navigation
+          menuContent={menuContent}
+          onActiveSubNav={onActiveSubNav}
+        />
+        
+        <MobileNavigation
+          menuContent={menuContent}
+          setHamburgerMenuIsActive={setHamburgerMenuIsActive}
+          hamburgerMenuIsActive={hamburgerMenuIsActive}
+        />
       </div>
 
 
