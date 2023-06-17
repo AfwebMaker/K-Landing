@@ -1,13 +1,13 @@
 import React, { useReducer, useRef } from 'react'
 //assets
 import calculator from '../../../assets/images/home/calculator/calculator.png'
-import rangeCircle from '../../../assets/images/home/calculator/range.svg'
 
 const initialState = {
     paymentPeriod: 'sixMonths',
     paymentType: 'threeMonths',
     numberPayments: '3',
-    rangeValue: 0
+    rangeValue: 0,
+    textBox: 0
 };
 
 const reducer = (state, action) => {
@@ -19,7 +19,9 @@ const reducer = (state, action) => {
         case 'numberPaymentsHandler':
             return { ...state, numberPayments: action.value };
         case 'rangeValueHandler':
-            return { ...state, rangeValue: action.value };
+            return { ...state, rangeValue: action.value, textBox: action.value * 20000000 / 100 };
+        case 'textBoxHandler':
+            return { ...state, textBox: action.value, rangeValue: action.value * 100 / 20000000 };
         default:
             return state
     }
@@ -30,9 +32,9 @@ function Calculator() {
     const range = useRef('')
 
     //back ground of range
-    function progressScript() {
-        const sliderValue = range.current.value;
-        range.current.style.background = `linear-gradient(to right, #FF513D ${sliderValue}%, #ccc ${sliderValue}%)`;
+    function progressScript(value, type) {
+        // const sliderValue = range.current.value;
+        range.current.style.background = `linear-gradient(to right, #FF513D ${type === "textBox" ? value * 100 / 20000000 : value}%, #ccc ${type === "textBox" ? value * 100 / 20000000 : value}%)`;
     }
 
     return (
@@ -84,14 +86,24 @@ function Calculator() {
                                 <div className='w-full flex flex-col items-center justify-around h-[40%]'>
                                     <span className='text-color-font-3 flex w-full h-[20%]'>مبلغ در خواستی</span>
                                     <div style={{ direction: 'ltr' }} className='relative w-full h-[30%] fcc'>
-                                        <input value={state.rangeValue} ref={range} onChange={(e) => { progressScript(); dispatch({ type: 'rangeValueHandler', value: e.target.value }) }} className='cursor-pointer z-10 slider w-full absolute' type="range" />
+                                        <input
+                                            value={state.rangeValue}
+                                            ref={range}
+                                            onChange={(e) => { progressScript(e.target.value, "range"); dispatch({ type: 'rangeValueHandler', value: e.target.value }) }}
+                                            className='cursor-pointer z-10 slider w-full absolute'
+                                            type="range"
+                                        />
 
                                         {/* <div style={{ left: `${state.rangeValue}%` }} className='absolute left-0 top-[-10px] text-[10px] font-light text-color-2 w-auto whitespace-nowrap'>
                                             {28300} تومان
                                         </div> */}
                                     </div>
                                     <div className='relative w-full h-[30%]'>
-                                        <input className='focus:outline-none w-full h-full rounded-lg bg-[#DCDDDE] pr-[4%]' placeholder='به طور مثال ۲۳,۹۸۰,۰۰۰' type="text" />
+                                        <input
+                                            value={state.textBox}
+                                            onChange={(e) => {progressScript(e.target.value, "textBox"); dispatch({ type: 'textBoxHandler', value: e.target.value }) }} className='focus:outline-none w-full h-full rounded-lg bg-[#DCDDDE] pr-[4%]' placeholder='به طور مثال ۲۳,۹۸۰,۰۰۰'
+                                            type="number"
+                                        />
                                         <div className='text-white w-[20%] h-full absolute left-0 bg-color-font-5 fcc top-0 rounded-lg cursor-default'>
                                             تومان
                                         </div>
