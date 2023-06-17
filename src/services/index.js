@@ -6,7 +6,7 @@ const instance1 = axios.create({
 });
 
 const instance2 = axios.create({
-    baseURL: "https://api.example2.com",
+    baseURL: "https://localhost:5000",
     timeout: 20000
 });
 

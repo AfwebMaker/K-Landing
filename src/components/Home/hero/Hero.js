@@ -10,6 +10,7 @@ import Drill_Icon from '../../../assets/images/home/hero/Drill_Icon.svg'
 import Jackhammer from '../../../assets/images/home/hero/Jackhammer.svg'
 import Screw_Icon from '../../../assets/images/home/hero/Screw_Icon.svg'
 import Helmet_Icon from '../../../assets/images/home/hero/Helmet_Icon.svg'
+import { Link } from 'react-router-dom'
 
 function Hero() {
     return (
@@ -42,34 +43,34 @@ function Hero() {
                 </div>
                 <div className='sm:absolute sm:bottom-10 w-[95%] max-w-[1000px] left-0 right-0 m-auto col-span-12 backdrop-filter backdrop-blur-xl overflow-x-scroll hideScroll h-[120px] rounded-xl shadow-xl'>
                     <div className='w-[1000px] h-full flex'>
-                        <div className='fcc flex-col px-2 py-4 h-full w-[150px] text-center'>
+                        <Link to="#" className='fcc flex-col px-2 py-4 h-full w-[150px] text-center'>
                             <img className='h-[80%]' src={loader} alt="تخریب و خاکبرداری" />
                             <span className='fcc text-xs font-light h-[20%]'>تخریب و خاکبرداری</span>
-                        </div>
-                        <div className='fcc flex-col px-2 py-4 h-full w-[150px] text-center'>
+                        </Link>
+                        <Link to="#" className='fcc flex-col px-2 py-4 h-full w-[150px] text-center'>
                             <img className='h-[80%]' src={Paint_Roller_Icon} alt="خدمات فوری" />
                             <span className='fcc text-xs font-light '>خدمات فوری</span>
-                        </div>
-                        <div className='fcc flex-col p-4 h-full w-[150px] text-center'>
+                        </Link>
+                        <Link to="#" className='fcc flex-col p-4 h-full w-[150px] text-center'>
                             <img className='h-[80%]' src={Tools_Icon} alt="تعمیر و نگهداری" />
                             <span className='fcc text-sm font-light '>تعمیر و نگهداری</span>
-                        </div>
-                        <div className='fcc flex-col p-4 h-full w-[150px] text-center'>
+                        </Link>
+                        <Link to="#" className='fcc flex-col p-4 h-full w-[150px] text-center'>
                             <img className='h-[80%]' src={Drill_Icon} alt="تاسیسات" />
                             <span className='fcc text-sm font-light '>تاسیسات</span>
-                        </div>
-                        <div className='fcc flex-col p-4 h-full w-[150px] text-center'>
+                        </Link>
+                        <Link to="#" className='fcc flex-col p-4 h-full w-[150px] text-center'>
                             <img className='h-[80%]' src={Jackhammer} alt="امور ساختمانی" />
                             <span className='fcc text-sm font-light '>امور ساختمانی</span>
-                        </div>
-                        <div className='fcc flex-col p-4 h-full w-[150px] text-center'>
+                        </Link>
+                        <Link to="#" className='fcc flex-col p-4 h-full w-[150px] text-center'>
                             <img className='h-[80%]' src={Screw_Icon} alt="اجرای سازه" />
                             <span className='fcc text-sm font-light '>اجرای سازه</span>
-                        </div>
-                        <div className='fcc flex-col p-4 h-full w-[150px] text-center'>
+                        </Link>
+                        <Link to="#" className='fcc flex-col p-4 h-full w-[150px] text-center'>
                             <img className='h-[80%]' src={Helmet_Icon} alt="بازسازی" />
                             <span className='fcc text-sm font-light '>بازسازی</span>
-                        </div>
+                        </Link>
                     </div>
                 </div> 
             </div>
