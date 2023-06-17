@@ -11,8 +11,35 @@ import Brands from '../components/Home/brands/Brands.js'
 import OfferBanner from '../components/Home/offerBanner/OfferBanner.js'
 import ProductsCategorization from '../components/Home/productsCategorization/ProductsCategorization.js'
 import Calculator from '../components/Home/calculator/Calculator.js'
-import { instance1 } from '../services';
-import axios from 'axios';
+// import { instance1 } from '../services';
+// import axios from 'axios';
+ //assets
+import Bathroom from "../assets/images/home/offerBanner/Bathroom.png"
+import coloring from "../assets/images/home/offerBanner/coloring.png"
+import decoration from "../assets/images/home/offerBanner/decoration.png"
+import facilities from "../assets/images/home/offerBanner/facilities.png"
+
+const offerBannerData1 = [
+  {
+    id:1,
+    imageSrc:Bathroom
+  },
+  {
+    id:1,
+    imageSrc:decoration
+  },
+]
+
+const offerBannerData2 = [
+  {
+    id:1,
+    imageSrc:coloring
+  },
+  {
+    id:2,
+    imageSrc:facilities
+  },
+]
 
 const Home = () => {
 
@@ -71,9 +98,9 @@ const Home = () => {
       {/* CarouselBanner no responsive */}
       <CarouselBanner />
 
-      <OfferBanner />
+      <OfferBanner data={offerBannerData1} />
       <ProductsCategorization />
-      <OfferBanner />
+      <OfferBanner data={offerBannerData2} />
       <Questions />
       <AppInformation />
       <Calculator />
