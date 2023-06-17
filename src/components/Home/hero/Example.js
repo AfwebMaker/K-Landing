@@ -19,7 +19,6 @@ const people = [
   { name: "کهگیلویه و بویراحمد" },
   { name: "شیراز" },
   { name: "اصفهان" },
-  
 ]
 
 export default function Example() {
