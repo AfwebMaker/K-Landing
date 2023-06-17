@@ -98,3 +98,7 @@ span.swiper-pagination-bullet {
   shape-outside: inset(20px 10px 10px 10px);
   shape-margin: 2%;
 }
+
+.border-left-dashed {
+  border-left:1px dashed #9D9FA2 ;
+}

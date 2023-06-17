@@ -41,15 +41,17 @@ const Home = () => {
     //   .catch(() => {
 
     //   })
+
     // khodami
-  //   axios.get('https://domain.com/api/v1/service-banners')
-  //     .then(response => {
-  //       console.log(response.data);
-  //     })
-  //     .catch(error => {
-  //       console.log(error);
-  //     });
-  // }, [])
+    // axios.get('https://domain.com/api/v1/service-banners')
+    //   .then(response => {
+    //     console.log(response.data);
+    //   })
+    //   .catch(error => {
+    //     console.log(error);
+    //   });
+  
+
     // taheri
   // axios.get('https://localhost:5000/mainpage/GetRootCategory')
   //     .then(response => {
