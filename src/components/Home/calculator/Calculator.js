@@ -86,9 +86,9 @@ function Calculator() {
                                     <div style={{ direction: 'ltr' }} className='relative w-full h-[30%] fcc'>
                                         <input value={state.rangeValue} ref={range} onChange={(e) => { progressScript(); dispatch({ type: 'rangeValueHandler', value: e.target.value }) }} className='cursor-pointer z-10 slider w-full absolute' type="range" />
 
-                                        <div style={{ left: `${state.rangeValue-8}%` }} className='absolute left-0 top-[-10px] text-[10px] font-light text-color-2 w-auto whitespace-nowrap	'>
-                                            {28320600} تومان
-                                        </div>
+                                        {/* <div style={{ left: `${state.rangeValue}%` }} className='absolute left-0 top-[-10px] text-[10px] font-light text-color-2 w-auto whitespace-nowrap'>
+                                            {28300} تومان
+                                        </div> */}
                                     </div>
                                     <div className='relative w-full h-[30%]'>
                                         <input className='focus:outline-none w-full h-full rounded-lg bg-[#DCDDDE] pr-[4%]' placeholder='به طور مثال ۲۳,۹۸۰,۰۰۰' type="text" />
