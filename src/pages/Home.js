@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 // services
-import { serviceBanner } from '../services/service-banner';
+// import { serviceBanner } from '../services/service-banner';
 // components
 import Weblog from '../components/Home/weblog/Weblog.js'
 import Hero from '../components/Home/hero/Hero.js'
