@@ -7,7 +7,7 @@ const initialState = {
     paymentType: 'threeMonths',
     numberPayments: '3',
     rangeValue: 0,
-    textBox: 0
+    textBox: ''
 };
 
 const reducer = (state, action) => {
@@ -21,7 +21,7 @@ const reducer = (state, action) => {
         case 'rangeValueHandler':
             return { ...state, rangeValue: action.value, textBox: action.value * 20000000 / 100 };
         case 'textBoxHandler':
-            return { ...state, textBox: action.value, rangeValue: action.value * 100 / 20000000 };
+            return { ...state, textBox: action.value, rangeValue: Math.ceil(action.value * 100 / 20000000) };
         default:
             return state
     }
@@ -92,6 +92,7 @@ function Calculator() {
                                             onChange={(e) => { progressScript(e.target.value, "range"); dispatch({ type: 'rangeValueHandler', value: e.target.value }) }}
                                             className='cursor-pointer z-10 slider w-full absolute'
                                             type="range"
+                                            step={1}
                                         />
 
                                         {/* <div style={{ left: `${state.rangeValue}%` }} className='absolute left-0 top-[-10px] text-[10px] font-light text-color-2 w-auto whitespace-nowrap'>
@@ -101,7 +102,8 @@ function Calculator() {
                                     <div className='relative w-full h-[30%]'>
                                         <input
                                             value={state.textBox}
-                                            onChange={(e) => {progressScript(e.target.value, "textBox"); dispatch({ type: 'textBoxHandler', value: e.target.value }) }} className='focus:outline-none w-full h-full rounded-lg bg-[#DCDDDE] pr-[4%]' placeholder='به طور مثال ۲۳,۹۸۰,۰۰۰'
+                                            onChange={(e) => {progressScript(e.target.value, "textBox"); dispatch({ type: 'textBoxHandler', value: e.target.value }) }} 
+                                            className='focus:outline-none w-full h-full rounded-lg bg-[#DCDDDE] pr-[4%]' placeholder='به طور مثال ۲۳,۹۸۰,۰۰۰'
                                             type="number"
                                         />
                                         <div className='text-white w-[20%] h-full absolute left-0 bg-color-font-5 fcc top-0 rounded-lg cursor-default'>
