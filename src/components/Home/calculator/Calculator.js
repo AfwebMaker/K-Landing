@@ -3,6 +3,7 @@ import React, { useReducer, useRef } from 'react'
 import calculator from '../../../assets/images/home/calculator/calculator.png'
 
 const initialState = {
+    maxPrice: 50000000,
     paymentPeriod: 'sixMonths',
     paymentType: 'threeMonths',
     numberPayments: '3',
@@ -12,6 +13,8 @@ const initialState = {
 
 const reducer = (state, action) => {
     switch (action.type) {
+        case 'maxPriceHandler':
+            return { ...state, maxPrice: action.value };
         case 'paymentPeriodHandler':
             return { ...state, paymentPeriod: action.value };
         case 'paymentTypeHandler':
@@ -19,9 +22,9 @@ const reducer = (state, action) => {
         case 'numberPaymentsHandler':
             return { ...state, numberPayments: action.value };
         case 'rangeValueHandler':
-            return { ...state, rangeValue: action.value, textBox: action.value * 20000000 / 100 };
+            return { ...state, rangeValue: action.value, textBox: action.value * state.maxPrice / 100 };
         case 'textBoxHandler':
-            return { ...state, textBox: action.value, rangeValue: Math.ceil(action.value * 100 / 20000000) };
+            return { ...state, textBox: action.value, rangeValue: Math.ceil(action.value * 100 / state.maxPrice) };
         default:
             return state
     }
@@ -34,7 +37,7 @@ function Calculator() {
     //back ground of range
     function progressScript(value, type) {
         // const sliderValue = range.current.value;
-        range.current.style.background = `linear-gradient(to right, #FF513D ${type === "textBox" ? Math.ceil(value * 100 / 20000000) : value}%, #ccc ${type === "textBox" ? Math.ceil(value * 100 / 20000000) : value}%)`;
+        range.current.style.background = `linear-gradient(to right, #FF513D ${type === "textBox" ? Math.ceil(value * 100 / state.maxPrice) : value}%, #ccc ${type === "textBox" ? Math.ceil(value * 100 / state.maxPrice) : value}%)`;
     }
 
     return (
@@ -102,10 +105,11 @@ function Calculator() {
                                     <div className='relative w-full h-[30%]'>
                                         <input
                                             value={state.textBox}
-                                            onChange={(e) => {progressScript(e.target.value, "textBox"); dispatch({ type: 'textBoxHandler', value: e.target.value }) }} 
-                                            className='focus:outline-none w-full h-full rounded-lg bg-[#DCDDDE] pr-[4%]' placeholder='به طور مثال ۲۳,۹۸۰,۰۰۰'
+                                            onChange={(e) => { progressScript(e.target.value, "textBox"); dispatch({ type: 'textBoxHandler', value: e.target.value }) }}
+                                            className='pr-[4%] text-right focus:outline-none w-full h-full rounded-lg bg-[#DCDDDE]'
+                                            placeholder='به طور مثال ۲۳,۹۸۰,۰۰۰'
                                             type="number"
-                                            // dir='ltr'
+                                            dir='ltr'
                                         />
                                         <div className='text-white w-[20%] h-full absolute left-0 bg-color-font-5 fcc top-0 rounded-lg cursor-default'>
                                             تومان
@@ -116,11 +120,11 @@ function Calculator() {
                             <div className='relative w-full h-[20%] text-color-font-3 flex flex-col justify-around py-[2%] px-[4%] border-t-2 border-dashed border-t-color-2 text-[10px] md:text-[1.2vw] lg:text-sm'>
                                 <div className='flex justify-between items-center'>
                                     <span>کمیسیون لیزینگ :</span>
-                                    <span>۷,۰۰۰,۰۰۰ تومان</span>
+                                    <span>{state.textBox} تومان</span>
                                 </div>
                                 <div className='flex justify-between items-center'>
                                     <span>مبلغ برای هر فقره چک :</span>
-                                    <span>۱۲,۰۰۰,۰۰۰ تومان</span>
+                                    <span>{state.textBox} تومان</span>
                                 </div>
                                 <div className='w-8 h-8 rounded-full bg-white md:bg-[#EBEFED] absolute top-[-17px] right-[-16px]'></div>
                                 <div className='w-8 h-8 rounded-full bg-white md:bg-[#EBEFED] absolute top-[-17px] left-[-16px]'></div>
