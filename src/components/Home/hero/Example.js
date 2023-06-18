@@ -45,7 +45,7 @@ export default function Example() {
                 <Listbox.Option
                   key={personIdx}
                   className={({ active }) =>
-                    `relative cursor-default select-none py-2 pl-10 pr-4 flex items-center justify-between w-full ${
+                    `relative cursor-default select-none py-2 pl-10 pr-4 flex items-center cursor-pointer justify-between w-full ${
                       active ? 'bg-[#45b6491d] transition-all duration-150 text-color-font-3' : 'text-color-Text3'
                     }`
                   }
