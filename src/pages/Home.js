@@ -25,7 +25,7 @@ const offerBannerData1 = [
     imageSrc:Bathroom
   },
   {
-    id:1,
+    id:2,
     imageSrc:decoration
   },
 ]
