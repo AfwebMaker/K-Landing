@@ -34,7 +34,7 @@ function Calculator() {
     //back ground of range
     function progressScript(value, type) {
         // const sliderValue = range.current.value;
-        range.current.style.background = `linear-gradient(to right, #FF513D ${type === "textBox" ? value * 100 / 20000000 : value}%, #ccc ${type === "textBox" ? value * 100 / 20000000 : value}%)`;
+        range.current.style.background = `linear-gradient(to right, #FF513D ${type === "textBox" ? Math.ceil(value * 100 / 20000000) : value}%, #ccc ${type === "textBox" ? Math.ceil(value * 100 / 20000000) : value}%)`;
     }
 
     return (
@@ -105,6 +105,7 @@ function Calculator() {
                                             onChange={(e) => {progressScript(e.target.value, "textBox"); dispatch({ type: 'textBoxHandler', value: e.target.value }) }} 
                                             className='focus:outline-none w-full h-full rounded-lg bg-[#DCDDDE] pr-[4%]' placeholder='به طور مثال ۲۳,۹۸۰,۰۰۰'
                                             type="number"
+                                            // dir='ltr'
                                         />
                                         <div className='text-white w-[20%] h-full absolute left-0 bg-color-font-5 fcc top-0 rounded-lg cursor-default'>
                                             تومان
