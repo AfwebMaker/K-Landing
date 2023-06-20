@@ -102,9 +102,9 @@ const Home = () => {
       <OfferBanner data={offerBannerData1} />
       <ProductsCategorization />
       <OfferBanner data={offerBannerData2} />
+      <Calculator />
       <Questions />
       <AppInformation />
-      <Calculator />
       <Weblog />
     </div>
   )

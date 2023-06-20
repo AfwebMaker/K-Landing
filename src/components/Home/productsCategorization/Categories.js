@@ -13,12 +13,12 @@ const categoriesData = [
     { id: 4, src: icon2, title: "لوله کشی ساختمان", link: "" },
     { id: 5, src: icon1, title: "نقاشی ساختمان", link: "" },
     { id: 6, src: icon2, title: "لوله کشی ساختمان", link: "" },
-    { id: 7, src: icon1, title: "نقاشی ساختمان", link: "" },
-    { id: 8, src: icon2, title: "لوله کشی ساختمان", link: "" },
-    { id: 9, src: icon1, title: "نقاشی ساختمان", link: "" },
-    { id: 10, src: icon2, title: "لوله کشی ساختمان", link: "" },
-    { id: 11, src: icon1, title: "نقاشی ساختمان", link: "" },
-    { id: 12, src: icon2, title: "لوله کشی ساختمان", link: "" },
+    // { id: 7, src: icon1, title: "نقاشی ساختمان", link: "" },
+    // { id: 8, src: icon2, title: "لوله کشی ساختمان", link: "" },
+    // { id: 9, src: icon1, title: "نقاشی ساختمان", link: "" },
+    // { id: 10, src: icon2, title: "لوله کشی ساختمان", link: "" },
+    // { id: 11, src: icon1, title: "نقاشی ساختمان", link: "" },
+    // { id: 12, src: icon2, title: "لوله کشی ساختمان", link: "" },
 ]
 
 function Categories() {

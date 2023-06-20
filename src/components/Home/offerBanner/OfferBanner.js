@@ -12,10 +12,8 @@ function offerBanner(props) {
         <div className='w-full grid grid-cols-12 gap-y-5 md:gap-y-0 md:gap-x-5 items-center justify-between'>
           {
             data && data.map(item => (
-              <Link to="#" key={item.id} className='relative col-span-12 fcc md:col-span-6 h-full overflow-hidden'>
-                <div className='w-full h-full fcc  bg-red-500 max-w-xl rounded-xl overflow-hidden'>
-                  <img src={item.imageSrc} alt='' />
-                </div>
+              <Link to="#" key={item.id} className='relative col-span-12 fcc md:col-span-6 h-full rounded-xl overflow-hidden'>
+                <img className='w-full' src={item.imageSrc} alt='' />
               </Link>
             ))
           }

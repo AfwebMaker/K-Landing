@@ -128,7 +128,7 @@ class Calculator extends React.Component {
 
   render() {
     return (
-      <div className="relative h-[600px] md:h-0 md:pb-[46.15384%] xl:pb-0 xl:h-[600px]  text-center m-auto flex items-center justify-center">
+      <div className="relative mt-10 h-[600px] md:h-0 md:pb-[46.15384%] xl:pb-0 xl:h-[600px]  text-center m-auto flex items-center justify-center">
         <div className="absolute maxHeightCalculator w-full h-full inset-0 maxLayout m-auto  px-[20px] md:px-[32px] flex flex-col items-center justify-center">
           <div className="bg-white md:bg-[#EBEFED] w-full h-full rounded-xl flex flex-col md:flex-row overflow-hidden">
             <div className="w-full md:w-1/2 md:h-full px-0  md:p-[2%] lg:p-[3%] flex flex-col items-center md:items-start justify-center md:justify-around">
