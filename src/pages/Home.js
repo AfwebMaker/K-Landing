@@ -10,7 +10,8 @@ import AppInformation from '../components/Home/appInformation/AppInformation.js'
 import Brands from '../components/Home/brands/Brands.js'
 import OfferBanner from '../components/Home/offerBanner/OfferBanner.js'
 import ProductsCategorization from '../components/Home/productsCategorization/ProductsCategorization.js'
-import Calculator from '../components/Home/calculator/Calculator.js'
+// import Calculator from '../components/Home/calculator/Calculator.js'
+import Calculator from '../components/Home/calculator/Calculator.jsx'
 // import { instance1 } from '../services';
 // import axios from 'axios';
  //assets

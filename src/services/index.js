@@ -10,4 +10,12 @@ const instance2 = axios.create({
     timeout: 20000
 });
 
-export { instance1, instance2 };
+const submitRequestAPI = axios.create({
+    baseURL: process.env.REACT_APP_SUBMIT_REQUEST_URL,
+    timeout: 20000,
+    headers: {
+        "Accept": "application/json"
+    }
+})
+
+export {instance1, instance2, submitRequestAPI};
