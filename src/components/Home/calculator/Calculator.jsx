@@ -130,7 +130,7 @@ class Calculator extends React.Component {
     return (
       <div className="relative mt-10 h-[600px] md:h-0 md:pb-[46.15384%] xl:pb-0 xl:h-[600px]  text-center m-auto flex items-center justify-center">
         <div className="absolute maxHeightCalculator w-full h-full inset-0 maxLayout m-auto  px-[20px] md:px-[32px] flex flex-col items-center justify-center">
-          <div className="bg-white md:bg-[#EBEFED] w-full h-full rounded-xl flex flex-col md:flex-row overflow-hidden">
+          <div className="bg-[#EBEFED] px-1 w-full h-full rounded-xl flex flex-col items-center justify-center md:flex-row overflow-hidden">
             <div className="w-full md:w-1/2 md:h-full px-0  md:p-[2%] lg:p-[3%] flex flex-col items-center md:items-start justify-center md:justify-around">
               <div className="flex items-start justify-center flex-col w-full">
                 <span className="text-color-3 text-xl lg:text-2xl font-bold mb-4 text-center md:text-right w-full">
@@ -147,7 +147,7 @@ class Calculator extends React.Component {
               </div>
             </div>
             <div className="w-full md:w-1/2 md:h-full flex items-center justify-center md:justify-end mt-10 md:mt-0 md:p-[1%]">
-              <div className="w-full h-[350px] max-w-md md:max-w-lg md:h-full bg-[#EBEFED] shadow-lg md:bg-white rounded-lg flex items-center justify-center flex-col">
+              <div className="w-full h-[350px] max-w-md md:max-w-xl md:h-full shadow-lg bg-white rounded-lg flex items-center justify-center flex-col">
                 <div className="w-full h-[80%] px-[4%] relative flex flex-col justify-around text-[10px] lg:text-sm">
                   <div className="w-full flex items-center justify-between h-[15%]">
                     <span className="text-color-font-3">دوره پرداخت</span>
@@ -320,8 +320,8 @@ class Calculator extends React.Component {
                       </span>
                     </div>
                   </div>
-                  <div className="w-8 h-8 rounded-full bg-white md:bg-[#EBEFED] absolute top-[-17px] right-[-16px]"></div>
-                  <div className="w-8 h-8 rounded-full bg-white md:bg-[#EBEFED] absolute top-[-17px] left-[-16px]"></div>
+                  <div className="w-8 h-8 rounded-full bg-[#EBEFED] absolute top-[-17px] right-[-16px]"></div>
+                  <div className="w-8 h-8 rounded-full bg-[#EBEFED] absolute top-[-17px] left-[-16px]"></div>
                 </div>
               </div>
             </div>
