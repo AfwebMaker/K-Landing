@@ -7,6 +7,7 @@ import hamburger_menu from '../../assets/images/header/hamburger_menu.svg'
 //components
 import Navigation from './Navigation'
 import MobileNavigation from './MobileNavigation'
+import ProfileDropdown from "./ProfileDropdown"
 
 function Header() {
   const menuContent = [
@@ -159,6 +160,7 @@ function Header() {
               یا
               <span className='font-medium m-1'>عضویت</span>
             </button>
+            {/* <ProfileDropdown /> */}
           </div>
         </div>
 
@@ -167,7 +169,7 @@ function Header() {
           menuContent={menuContent}
           onActiveSubNav={onActiveSubNav}
         />
-        
+
         <MobileNavigation
           menuContent={menuContent}
           setHamburgerMenuIsActive={setHamburgerMenuIsActive}

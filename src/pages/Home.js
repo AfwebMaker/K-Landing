@@ -81,13 +81,13 @@ const Home = () => {
   
 
     // taheri
-  // axios.get('https://localhost:5000/mainpage/GetRootCategory')
-  //     .then(response => {
-  //       console.log(response.data);
-  //     })
-  //     .catch(error => {
-  //       console.log(error);
-  //     });
+    // axios.get('https://172.16.100.60:3000/mainpage/GetRootCategory')
+    //   .then(response => {
+    //     console.log(response);
+    //   })
+    //   .catch(error => {
+    //     console.log(error);
+    //   });
   }, [])
 
   return (
