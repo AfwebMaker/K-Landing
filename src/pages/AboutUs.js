@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import React from "react"
 // assets
 import AcademyMedium from "../../src/assets/images/home/brands/Academy Medium.svg"
 import AutoSazeMedium from "../../src/assets/images/home/brands/Auto Saze Medium.svg"
