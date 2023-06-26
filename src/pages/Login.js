@@ -35,7 +35,7 @@ export default function Login() {
             phoneNumber: '',
             password: ''
         },
-        validationSchema: validationSchema,
+        validationSchema,
         onSubmit: values => {
             alert(JSON.stringify(values, null, 2));
         },
@@ -45,9 +45,9 @@ export default function Login() {
         <>
             <div className="flex min-h-full flex-1">
                 <div style={{ direction: 'ltr' }} className='customScrollbar h-screen overflow-hidden overflow-y-auto w-full lg:w-auto'>
-                    <Link to={'/'} className='relative pt-4 w-full text-color-font-3 fcc'>
+                    <Link to={'/'} className='relative pt-4 w-full text-color-font-3 flex justify-end items-center'>
                         برگشت
-                        <img className='absolute right-4' src={Arrow_right} alt="برگشت" />
+                        <img className='mr-4 ml-2' src={Arrow_right} alt="برگشت" />
                     </Link>
                     <div style={{ direction: 'rtl' }} className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
 
@@ -74,6 +74,7 @@ export default function Login() {
                                             <div className="mt-2 relative flex items-center">
                                                 <HiPhone size={18} className='absolute right-3 text-color-2' />
                                                 <input
+                                                    dir='ltr'
                                                     id="phoneNumber"
                                                     name="phoneNumber"
                                                     type="number"
@@ -81,36 +82,38 @@ export default function Login() {
                                                     onChange={formik.handleChange}
                                                     onBlur={formik.handleBlur}
                                                     value={formik.values.phoneNumber}
-                                                    className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-color-3 focus:outline-none sm:text-sm sm:leading-6 pr-10"
+                                                    className="caret-color-font-3 text-right block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-color-3 focus:outline-none sm:text-sm sm:leading-6 px-10 mb-1"
                                                 />
                                                 <HiXCircle onClick={() => { formik.setFieldValue("phoneNumber", '') }} size={18} className='absolute left-3 text-color-2 cursor-pointer' />
                                             </div>
                                             {formik.touched.phoneNumber && formik.errors.phoneNumber &&
-                                                <span className='error text-[#FB923C] flex mt-2 text-xs'>
+                                                <span className='bg-[#fb923c1a] text-[#FB923C] rounded-sm mt-2 text-xs'>
                                                     {formik.errors.phoneNumber}
                                                 </span>
                                             }
                                         </div>
 
                                         <div>
-                                            <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                                            <label htmlFor="password" className="block text-sm font-medium leading-4 text-gray-900">
                                                 رمز عبور
                                             </label>
                                             <div className="mt-2 relative flex items-center">
                                                 <FaKey size={16} className='absolute right-3 text-color-2' />
                                                 <input
+                                                    dir='ltr'
                                                     id="password"
                                                     name="password"
                                                     type={passwordVisible ? "text" : "password"}
+                                                    placeholder='••••••••••••'
                                                     onChange={formik.handleChange}
                                                     onBlur={formik.handleBlur}
                                                     value={formik.values.password}
-                                                    className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-color-3 focus:outline-none pr-10 sm:text-sm sm:leading-6"
+                                                    className="caret-color-font-3 text-right block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-color-3 focus:outline-none px-10 sm:text-sm sm:leading-6 mb-1"
                                                 />
                                                 <HiEye onClick={() => { setPasswordVisible(!passwordVisible) }} size={18} className='cursor-pointer absolute left-3 text-color-2' />
                                             </div>
                                             {formik.touched.password && formik.errors.password &&
-                                                <span className='error text-[#FB923C] flex mt-2 text-xs'>
+                                                <span className='bg-[#fb923c1a] text-[#FB923C] rounded-sm mt-2 text-xs'>
                                                     {formik.errors.password}
                                                 </span>
                                             }
@@ -138,7 +141,7 @@ export default function Login() {
                                         <div>
                                             <button
                                                 type="submit"
-                                                className="flex w-full justify-center rounded-md bg-color-3 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#4cc751] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                                className="flex w-full justify-center rounded-md bg-color-3 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#4cc751] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                                             >
                                                 ورود به پنل کاربری
                                             </button>
