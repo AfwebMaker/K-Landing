@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react'
-// services
-// import { serviceBanner } from '../services/service-banner';
 // components
 import Weblog from '../components/Home/weblog/Weblog.js'
 import Hero from '../components/Home/hero/Hero.js'
@@ -10,9 +8,8 @@ import AppInformation from '../components/Home/appInformation/AppInformation.js'
 import Brands from '../components/Home/brands/Brands.js'
 import OfferBanner from '../components/Home/offerBanner/OfferBanner.js'
 import ProductsCategorization from '../components/Home/productsCategorization/ProductsCategorization.js'
-// import Calculator from '../components/Home/calculator/Calculator.js'
 import Calculator from '../components/Home/calculator/Calculator.jsx'
-// import { instance1 } from '../services';
+// axios
 import axios from 'axios';
  //assets
 import Bathroom from "../assets/images/home/offerBanner/Bathroom.png"

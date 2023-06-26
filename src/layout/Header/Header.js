@@ -155,12 +155,12 @@ function Header() {
               <img className='h-4' src={person} alt="ایکون متخصص هستم" />
               <span className='mr-2 text-color-font-2'>متخصص هستم</span>
             </div>
-            <button className='bg-color-font-3 rounded-md text-white p-2 font-thin'>
+            {/* <button className='bg-color-font-3 rounded-md text-white p-2 font-thin'>
               <span className='font-medium m-1'>ورود</span>
               یا
               <span className='font-medium m-1'>عضویت</span>
-            </button>
-            {/* <ProfileDropdown /> */}
+            </button> */}
+            <ProfileDropdown />
           </div>
         </div>
 
