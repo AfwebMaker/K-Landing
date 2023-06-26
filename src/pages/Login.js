@@ -82,7 +82,7 @@ export default function Login() {
                                                     onChange={formik.handleChange}
                                                     onBlur={formik.handleBlur}
                                                     value={formik.values.phoneNumber}
-                                                    className="caret-color-font-3 text-right block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-color-3 focus:outline-none sm:text-sm sm:leading-6 px-10 mb-1"
+                                                    className="caret-color-font-3 text-right block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-color-3 focus:outline-none sm:text-sm sm:leading-6 px-10"
                                                 />
                                                 <HiXCircle onClick={() => { formik.setFieldValue("phoneNumber", '') }} size={18} className='absolute left-3 text-color-2 cursor-pointer' />
                                             </div>
@@ -108,7 +108,7 @@ export default function Login() {
                                                     onChange={formik.handleChange}
                                                     onBlur={formik.handleBlur}
                                                     value={formik.values.password}
-                                                    className="caret-color-font-3 text-right block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-color-3 focus:outline-none px-10 sm:text-sm sm:leading-6 mb-1"
+                                                    className="caret-color-font-3 text-right block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-color-3 focus:outline-none px-10 sm:text-sm sm:leading-6"
                                                 />
                                                 <HiEye onClick={() => { setPasswordVisible(!passwordVisible) }} size={18} className='cursor-pointer absolute left-3 text-color-2' />
                                             </div>
