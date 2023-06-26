@@ -87,7 +87,7 @@ export default function Login() {
                                                 <HiXCircle onClick={() => { formik.setFieldValue("phoneNumber", '') }} size={18} className='absolute left-3 text-color-2 cursor-pointer' />
                                             </div>
                                             {formik.touched.phoneNumber && formik.errors.phoneNumber &&
-                                                <span className='bg-[#fb923c1a] text-[#FB923C] rounded-sm mt-2 text-xs'>
+                                                <span className='bg-[#fb923c1a] text-[#FB923C] rounded-[4px] mt-2 text-xs'>
                                                     {formik.errors.phoneNumber}
                                                 </span>
                                             }
@@ -113,7 +113,7 @@ export default function Login() {
                                                 <HiEye onClick={() => { setPasswordVisible(!passwordVisible) }} size={18} className='cursor-pointer absolute left-3 text-color-2' />
                                             </div>
                                             {formik.touched.password && formik.errors.password &&
-                                                <span className='bg-[#fb923c1a] text-[#FB923C] rounded-sm mt-2 text-xs'>
+                                                <span className='bg-[#fb923c1a] text-[#FB923C] rounded-[4px] mt-2 text-xs'>
                                                     {formik.errors.password}
                                                 </span>
                                             }
