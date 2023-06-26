@@ -13,8 +13,7 @@ function SubNavigationItem(props) {
                                 {item.title}
                             </Link>
                         </li>
-                    ))
-                    }
+                    ))}
                 </ul>
             </div>
         </div>
