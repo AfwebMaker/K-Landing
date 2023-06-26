@@ -3,7 +3,7 @@ import React, { useReducer, useRef } from 'react'
 import calculator from '../../../assets/images/home/calculator/calculator.png'
 
 const initialState = {
-    maxPrice: 50000000,
+    maxPrice: 1000000,
     paymentPeriod: 'sixMonths',
     paymentType: 'threeMonths',
     numberPayments: '3',
